@@ -19,8 +19,7 @@ title: Department of Electronics, HCMUT # the main title
 tagline: Welcome to the Department of Electronics at Ho Chi Minh City University of Technology (HCMUT). Our department provides various resources and labs to support students in their academic and research activities.
 # it will display as the sub-title
 
-description: >- # used by seo meta and the atom feed
-Welcome to the Department of Electronics at Ho Chi Minh City University of Technology (HCMUT). Our department provides various resources and labs to support students in their academic and research activities.
+description: Welcome to the Department of Electronics at Ho Chi Minh City University of Technology (HCMUT). Our department provides various resources and labs to support students in their academic and research activities. # used by seo meta and the atom feed Welcome to the Department of Electronics at Ho Chi Minh City University of Technology (HCMUT). Our department provides various resources and labs to support students in their academic and research activities.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.

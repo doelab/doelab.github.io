@@ -2,14 +2,14 @@
 
 - type: github
   icon: "fab fa-github"
-  #url: "github.com/doelab"
+  url: "github.com/doelab"
 
 #- type: twitter
 #  icon: "fa-brands fa-x-twitter"
 
 - type: email
   icon: "fas fa-envelope"
-  #url: "bmdt@hcmut.edu.vn"
+  url: "bmdt@hcmut.edu.vn"
   noblank: true # open link in current tab
 
 #- type: rss
