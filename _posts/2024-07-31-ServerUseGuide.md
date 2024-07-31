@@ -300,7 +300,7 @@ The `sacct` command provides detailed accounting information for completed jobs,
 sacct
 ```
 
-By default, sacct only shows jobs from the current day. Use the `--starttime` flag to look up older jobs:
+By default, `sacct` only shows jobs from the current day. Use the `--starttime` flag to look up older jobs:
 ```bash
 sacct --starttime=YYYY-MM-DD
 ```
