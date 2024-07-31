@@ -1,12 +1,12 @@
 ---
-title: DSP on FPGA Lab Courses
+title: EE4449 Logic Design and Logic Synthesis Lab Courses
 date: 2024-07-31 20:56:00 +0700
-categories: [Lab Courses, DSP on FPGA]
-tags: [lab, dsp on fpga, dsp, fpga, courses]     # TAG names should always be lowercase
+categories: [Lab Courses, EE4449 Logic Design and Logic Synthesis]
+tags: [lab, logic design, logic synthesis, fpga, courses]     # TAG names should always be lowercase
 author: haka
 toc: true
 comments: false
-description: DSP on FPGA Lab Courses
+description: Labs for EE4449 Logic Design/Logic Synthesis Course at HCMUT
 ---
 # EE4449 Logic Design and Logic Synthesis Lab
 
