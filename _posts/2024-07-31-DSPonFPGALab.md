@@ -31,8 +31,8 @@ The root of this repository contains all the lab exercises for the course. Each 
 
 ### List of Lab Exercises
 
-1. [Lab 1: Simple warm-up](Lab1)
-2. [Lab 2: Matrix problem](Lab2)
-3. [Lab 3: Asynchronous FIFO](Lab3)
-4. [Lab 4: Calculator](Lab4)
-5. [Lab 5: Tensor32 FP](Lab5)
+1. [Lab 1: Simple warm-up]
+2. [Lab 2: Matrix problem]
+3. [Lab 3: Asynchronous FIFO]
+4. [Lab 4: Calculator]
+5. [Lab 5: Tensor32 FP]
