@@ -2,7 +2,7 @@
 title: SERVER USER GUIDE
 date: 2024-07-31 19:03:00 +0700
 categories: [Guide, Server]
-tags: [Slurm,Guide,FAQ,Server]     # TAG names should always be lowercase
+tags: [slurm,guide,faq,server]     # TAG names should always be lowercase
 author: haicao
 toc: true
 comments: false
