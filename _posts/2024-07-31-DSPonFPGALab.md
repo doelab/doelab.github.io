@@ -3,7 +3,7 @@ title: DSP on FPGA Lab Courses
 date: 2024-07-31 20:56:00 +0700
 categories: [Lab Courses, DSP on FPGA]
 tags: [lab, dsp on fpga, dsp, fpga, courses]     # TAG names should always be lowercase
-author: Hung Nguyen
+author: haka
 toc: true
 comments: false
 description: DSP on FPGA Lab Courses

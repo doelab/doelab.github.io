@@ -3,7 +3,7 @@ title: SERVER USER GUIDE
 date: 2024-07-31 19:03:00 +0700
 categories: [Guide, Server]
 tags: [Slurm,Guide,FAQ,Server]     # TAG names should always be lowercase
-author: Hai Cao
+author: haicao
 toc: true
 comments: false
 description: This guide serves as a comprehensive manual for accessing and utilizing the centralized server infrastructure provided by the DOE lab for academic purposes. The server centralizes all necessary software tools, significantly enhancing the educational experience for students and teaching assistants (TAs). By housing these tools on a dedicated server, we eliminate the need for students to install large, potentially incompatible software on their laptops. This setup not only resolves compatibility issues but also streamlines the monitoring and supervision processes for TAs to effectively assist and oversee student activities. To ensure optimal performance and equitable access to server resources, both students and TAs have to follow the workflow provided in this guide. This document outlines the procedures for accessing the server, submitting jobs using the SLURM workload manager, and utilizing various server resources.
