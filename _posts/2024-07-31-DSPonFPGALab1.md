@@ -59,9 +59,9 @@ is available at: http://www.terasic.com.tw/wiki/Altera_USB_Blaster_Driver_Instal
 
 ## Assignment Overview
 
-The repo contains **[sumitup.sv](sumitup.sv)** your starter code.  Also in
-the same repo are **[p1hwtb.svp](p1hwtb.svp)**. a hardware testbench, and **p1simtb.sv** as
-simulation testbench.  **[DE10_Standard_Pin_Assignment.qsf](DE10_Standard_Pin_Assignment.qsf)** is a pin definition
+The repo contains **sumitup.sv** your starter code.  Also in
+the same repo are **p1hwtb.svp**. a hardware testbench, and **p1simtb.sv** as
+simulation testbench.  **DE10_Standard_Pin_Assignment.qsf** is a pin definition
 file for your board. The other files are headers so that you can write
 the module a bit easier for both of us (DO NOT CHANGE THE HEADERS).
 
@@ -96,7 +96,7 @@ combinational logic to drive the displays. (Hint: write a **bcdtohex** module to
 Lastly, write the **p1** module to be the top module of your design, connecting everything
 and synthesize on Quartus. The topology should be similar to the picture below.
 
-![Alt text](LAB1TOP.png)
+![Alt text](https://github.com/doelab/EE4449_LogicDesign_LogicSynthesis_Lab/blob/main/Lab1/LAB1TOP.png)
 
 Just to make sure you've thought this through, let me ask a few questions. 
  
