@@ -1,6 +1,6 @@
 ---
 title:  EE4449 Logic Design and Logic Synthesis Lab 2
-date: 2024-08-01 16:56:00 +0700
+date: 2024-08-01 10:56:00 +0700
 categories: [Lab Courses, EE4449 Logic Design and Logic Synthesis]
 tags: [lab, logic design, logic synthesis, fpga, courses]      # TAG names should always be lowercase
 author: haka
