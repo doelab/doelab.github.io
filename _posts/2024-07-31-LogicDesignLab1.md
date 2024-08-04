@@ -7,6 +7,7 @@ author: haka
 toc: true
 comments: false
 description: Lab 1 for EE4449 Logic Design/Logic Synthesis Course at HCMUT
+media_subpath: /assets/img/LogicDesign/Lab1/
 ---
 # LAB 1 - EE4449 - HCMUT
 
@@ -96,7 +97,8 @@ combinational logic to drive the displays. (Hint: write a **bcdtohex** module to
 Lastly, write the **p1** module to be the top module of your design, connecting everything
 and synthesize on Quartus. The topology should be similar to the picture below.
 
-![Alt text](https://github.com/doelab/EE4449_LogicDesign_LogicSynthesis_Lab/blob/main/Lab1/LAB1TOP.png)
+![alt text](LAB1TOP.png)
+_Figure 1: Topology of the design_
 
 Just to make sure you've thought this through, let me ask a few questions. 
  
