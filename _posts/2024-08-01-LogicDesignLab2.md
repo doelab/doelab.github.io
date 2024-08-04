@@ -91,7 +91,7 @@ tool called TimeQuest that will calculate this for you.  In the Tasks pane,
 navigate to **Compile Design ➙ Timing Analysis ➙ View Report (double-click)
 ➙ Slow 1200mV 85C Model ➙ Fmax Summary** and you should see something like this:
 
-![Fmax Summary](https://github.com/doelab/EE4449_LogicDesign_LogicSynthesis_Lab/blob/main/Lab2/images/Fmax_Summary.png)
+![alt text](../assets/img/LogicDesign/Lab2/Fmax_Summary.png)
 
 The Fmax column is what were interested in.  Keep this value over 70MHz by
 breaking up large blobs of combinational logic with registers, and your design
@@ -114,7 +114,8 @@ If you want to tell Quartus what your clock is, then do the following:
 
 2. From the home screen, navigate to **Tools ➙ Timing Analyzer** along the top
    toolbar.  You should see a window that looks like the following:
-   ![Timing Analyzer](https://github.com/doelab/EE4449_LogicDesign_LogicSynthesis_Lab/blob/main/Lab2/images/Timing_Analyzer.png)
+
+![alt text](../assets/img/LogicDesign/Lab2/Timing_Analyzer.png)
 
 3. In the resulting window, use the taskbar on the bottom left to select
    **Tasks ➙ Diagnostic ➙ Report Clocks**.  This will take a few seconds, but
@@ -127,7 +128,8 @@ If you want to tell Quartus what your clock is, then do the following:
    values.  If your `CLOCK_50` is not present, you can create it by going to
    **Constraints ➙ Create Clock ...** along the top.  Make sure the values match
    this exactly:
-   ![Defining a clock](https://github.com/doelab/EE4449_LogicDesign_LogicSynthesis_Lab/blob/main/Lab2/images/Clock_Constraints.png).
+
+![alt text](../assets/img/LogicDesign/Lab2/Clock_Constraints.png)
 
 5. Then, assuming everything looks good, go to **Tasks ➙ Write SDC File ...** on
    the bottom-left to generate a constraints file.  You may need to explicitly
@@ -140,7 +142,7 @@ If you want to tell Quartus what your clock is, then do the following:
    It may give the same information as before, but now Quartus will be able to
    measure your critical paths accurate and decide if your design is feasible.
 
-![Clock Constraints](https://github.com/doelab/EE4449_LogicDesign_LogicSynthesis_Lab/blob/main/Lab2/images/TimingQuest_Clocks.png)
+![alt text](../assets/img/LogicDesign/Lab2/TimingQuest_Clocks.png)
 
 ## For Credit
 
