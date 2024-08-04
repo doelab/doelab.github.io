@@ -7,6 +7,8 @@ author: haka
 toc: true
 comments: false
 description: Lab 2 for EE4449 Logic Design/Logic Synthesis Course at HCMUT
+media_subpath: /assets/img/LogicDesign/Lab2/
+
 ---
 # Matrix Multiply Project
 
@@ -91,7 +93,8 @@ tool called TimeQuest that will calculate this for you.  In the Tasks pane,
 navigate to **Compile Design ➙ Timing Analysis ➙ View Report (double-click)
 ➙ Slow 1200mV 85C Model ➙ Fmax Summary** and you should see something like this:
 
-![alt text](../assets/img/LogicDesign/Lab2/Fmax_Summary.png)
+![alt text](Fmax_Summary.png)
+_This is a screenshot of the Fmax Summary from the TimeQuest Timing Analyzer._
 
 The Fmax column is what were interested in.  Keep this value over 70MHz by
 breaking up large blobs of combinational logic with registers, and your design
@@ -115,34 +118,37 @@ If you want to tell Quartus what your clock is, then do the following:
 2. From the home screen, navigate to **Tools ➙ Timing Analyzer** along the top
    toolbar.  You should see a window that looks like the following:
 
-![alt text](../assets/img/LogicDesign/Lab2/Timing_Analyzer.png)
+![alt text](Timing_Analyzer.png)
+_This is a screenshot of the Timing Analyzer window._
 
-3. In the resulting window, use the taskbar on the bottom left to select
+1. In the resulting window, use the taskbar on the bottom left to select
    **Tasks ➙ Diagnostic ➙ Report Clocks**.  This will take a few seconds, but
    once it is complete the Timing Analyzer should generate a first-pass report
    for your design.
 
-4. Under **Clocks Summary** you should see an entry for `CLOCK_50`, but it might
+2. Under **Clocks Summary** you should see an entry for `CLOCK_50`, but it might
    not have the correct constraints for Period, Rise, and Fall times.  You can
    right-click the entries and select **Edit Clock Constraint** to fix the
    values.  If your `CLOCK_50` is not present, you can create it by going to
    **Constraints ➙ Create Clock ...** along the top.  Make sure the values match
    this exactly:
 
-![alt text](../assets/img/LogicDesign/Lab2/Clock_Constraints.png)
+![alt text](Clock_Constraints.png)
+_This is a screenshot of the Clock Constraints window._
 
-5. Then, assuming everything looks good, go to **Tasks ➙ Write SDC File ...** on
+1. Then, assuming everything looks good, go to **Tasks ➙ Write SDC File ...** on
    the bottom-left to generate a constraints file.  You may need to explicitly
    add this file to your Quartus project by going to **Project ➙ Add/Remove
    Files in Project ...** and following the prompts like you would have for any
    new SystemVerilog file.
 
-6. When you re-run the Timing Analyzer as part of the compilation flow in the
+2. When you re-run the Timing Analyzer as part of the compilation flow in the
    future, it will have a listing for the clock you just created and constrained.
    It may give the same information as before, but now Quartus will be able to
    measure your critical paths accurate and decide if your design is feasible.
 
-![alt text](../assets/img/LogicDesign/Lab2/TimingQuest_Clocks.png)
+![alt text](TimingQuest_Clocks.png)
+_This is a screenshot of the Timing Analyzer window showing the clock constraints._
 
 ## For Credit
 
