@@ -384,3 +384,9 @@ sbatch: error: Batch job submission failed: Job violates accounting/QOS policy (
 This error indicates that you have reached the maximum number of jobs you are allowed to submit.
 Please wait until some of your current jobs are completed.
 Refer to the DOE Server Resources section to review the job submission limits applicable to your account.
+
+2. **Why can I access the server but my group member received this error?**
+```bash
+Could not acquire name on session bus
+```
+Only one session can be acquired at once. You must discuss with your friends to resolve this conflict.
