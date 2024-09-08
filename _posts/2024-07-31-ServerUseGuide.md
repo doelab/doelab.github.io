@@ -6,7 +6,7 @@ tags: [slurm,guide,faq,server]     # TAG names should always be lowercase
 author: haicao
 toc: true
 comments: false
-description: This guide serves as a comprehensive manual for accessing and utilizing the centralized server infrastructure provided by the DOE lab for academic purposes. The server centralizes all necessary software tools, significantly enhancing the educational experience for students and teaching assistants (TAs). By housing these tools on a dedicated server, we eliminate the need for students to install large, potentially incompatible software on their laptops. This setup not only resolves compatibility issues but also streamlines the monitoring and supervision processes for TAs to effectively assist and oversee student activities. To ensure optimal performance and equitable access to server resources, both students and TAs have to follow the workflow provided in this guide. This document outlines the procedures for accessing the server, submitting jobs using the SLURM workload manager, and utilizing various server resources.
+description: This guide serves as a comprehensive manual for accessing and utilizing the centralized server infrastructure provided by the DOE lab for academic purposes.
 ---
 # SERVER USER GUIDE
 
@@ -293,7 +293,7 @@ To cancel multiple jobs, list the job IDs separated by commas:
 scancel job_id_1,job_id_2,job_id_3
 ```
 
-### Analyze past jobs sacct
+### Analyze past jobs `sacct`
 
 The `sacct` command provides detailed accounting information for completed jobs, which can be useful for auditing resource usage and identifying bottlenecks.
 ```bash
@@ -384,3 +384,23 @@ sbatch: error: Batch job submission failed: Job violates accounting/QOS policy (
 This error indicates that you have reached the maximum number of jobs you are allowed to submit.
 Please wait until some of your current jobs are completed.
 Refer to the DOE Server Resources section to review the job submission limits applicable to your account.
+
+2. **Why can I access the server but my group member received this error?**
+```bash
+Could not acquire name on session bus
+```
+Only one session can be acquired at once. You must discuss with your friends to resolve this conflict.
+
+3. **My session is hanged/frozen, and I can't connect to it anymore. What should I do?**
+
+In this situation, you have to kill the program(s) leading to the problem. If you can't find the root cause, just kill all your works.
+
+First, use Terminal or Powershell to connect to the server
+```bash
+ssh <your username>@<your login>
+```
+Then, run the following command
+```bash
+killall -u `whoami`
+```
+All of your running programs on the server would be terminated, and you're supposed to have a fresh session.
