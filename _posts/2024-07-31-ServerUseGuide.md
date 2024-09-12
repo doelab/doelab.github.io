@@ -375,7 +375,6 @@ Disk quotas for user comp (uid 1100):
 ## FAQ
 
 1. **Why do I receive this error?**
-
 ```bash
 sbatch: error: AssocMaxSubmitJobLimit
 sbatch: error: Batch job submission failed: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
@@ -385,7 +384,6 @@ Please wait until some of your current jobs are completed.
 Refer to the DOE Server Resources section to review the job submission limits applicable to your account.
 
 2. **Why can I access the server but my group member received this error?**
-
 ```bash
 Could not acquire name on session bus
 ```
@@ -393,8 +391,7 @@ Only one session can be acquired at once. You must discuss with your friends to 
 
 3. **My session is hung/frozen, and I can't connect to it anymore. What should I do?**
 
-In this situation, you have to kill the program(s) leading to the problem. If you can't find the root cause, just kill all your works.
-
+In this situation, you have to kill the program(s) leading to the problem. If you can't find the root cause, just kill all your works.\
 First, use Terminal or Powershell to connect to the server
 ```bash
 ssh <your username>@<your login>
@@ -409,18 +406,13 @@ All of your running programs on the server would be terminated, and you're suppo
 
 Typing long commands can be time-consuming and prone to errors. To streamline your workflow, consider using aliases and Makefiles.
 Research online to learn how to create these tools.
-
-Here's an example of an alias to simplify interactive job submissions:
-
+Here's an example of an alias to simplify interactive job submissions: \
 Assuming the username is `comp`, the target compute node is `triton`, the job will run for 2 hours, requires 1GB of memory per CPU, and uses 1 CPU, you can add the following alias to your `.bashrc` file:
-
 ```bash
 cat "alias srun_triton=srun --x11 --partition=triton --account=comp --time=0:10:00 --mem-per-cpu=1G --cpus-per-task=1 --pty bash" >> ~/.bashrc
 ```
-
 Now, instead of typing the entire srun command, you can simply use `srun_triton` to access the triton compute node with the specified parameters.
 ```bash
 srun_triton
 ```
-
 For more advanced users, customize your shell configuration files to suit your specific needs.
