@@ -374,7 +374,7 @@ Disk quotas for user comp (uid 1100):
 
 ## FAQ
 
-1. **Why do I receive this error?**
+Question 1. **Why do I receive this error?**
 ```bash
 sbatch: error: AssocMaxSubmitJobLimit
 sbatch: error: Batch job submission failed: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
@@ -383,13 +383,13 @@ This error indicates that you have reached the maximum number of jobs you are al
 Please wait until some of your current jobs are completed.
 Refer to the DOE Server Resources section to review the job submission limits applicable to your account.
 
-2. **Why can I access the server but my group member received this error?**
+Question 2. **Why can I access the server but my group member received this error?**
 ```bash
 Could not acquire name on session bus
 ```
 Only one session can be acquired at once. You must discuss with your friends to resolve this conflict.
 
-3. **My session is hung/frozen, and I can't connect to it anymore. What should I do?**
+Question 3. **My session is hung/frozen, and I can't connect to it anymore. What should I do?**
 
 In this situation, you have to kill the program(s) leading to the problem. If you can't find the root cause, just kill all your works.\
 First, use Terminal or Powershell to connect to the server
@@ -402,7 +402,7 @@ killall -u `whoami`
 ```
 All of your running programs on the server would be terminated, and you're supposed to have a fresh session.
 
-4. **I'm getting tired of typing out these lengthy commands. Is there a shortcut or easier way to do this?**
+Question 4. **I'm getting tired of typing out these lengthy commands. Is there a shortcut or easier way to do this?**
 
 Typing long commands can be time-consuming and prone to errors. To streamline your workflow, consider using aliases and Makefiles.
 Research online to learn how to create these tools.
