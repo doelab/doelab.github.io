@@ -391,7 +391,7 @@ Could not acquire name on session bus
 ```
 Only one session can be acquired at once. You must discuss with your friends to resolve this conflict.
 
-3. **My session is hanged/frozen, and I can't connect to it anymore. What should I do?**
+3. **My session is hung/frozen, and I can't connect to it anymore. What should I do?**
 
 In this situation, you have to kill the program(s) leading to the problem. If you can't find the root cause, just kill all your works.
 
