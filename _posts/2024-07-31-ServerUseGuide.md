@@ -155,27 +155,21 @@ While batch jobs are ideal for non-interactive tasks, interactive jobs are neces
 Interactive jobs allow users to directly interact with the compute environment.
 However, due to resource limitations and fair usage policies, users are encouraged to minimize the use of interactive sessions.
 
-The workflow for Interactive Job is:
-1. Allocate resources
-2. Access the shell in the allocated compute node
+#### First workflow
 
-or 
-
-1. Directly access the shell
-
-#### Allocate resources
+**1. Allocate resources**
 
 To allocate resources in a compute node and submit that request to the SLURM scheduler, use the `salloc` command followed by several flags:
 
 ```bash
-salloc --x11 --partition=triton --account=comp --time=0:10:00 --mems-per-cpu=1G --cpus-per-task=1
+salloc --x11 --partition=triton --account=comp --time=0:10:00 --mem-per-cpu=1G --cpus-per-task=1
 ```
 
 This command queues the allocation request for execution.
 The flags are the same as in Batch Jobs, but the `--x11` flag indicates that students can use GUI while in the allocated compute node.
 If this flag is omitted, any attempts to open GUI will be denied.
 
-#### Access the shell
+**2. Access the shell in the allocated compute node**
 
 To access the shell in the allocated partition, use the `srun` command followed by the shell:
 
@@ -185,10 +179,14 @@ or
 srun --pty zsh
 ```
 
+#### Second workflow
+
+**1. Directly access the shell**
+
 To access the shell without `salloc`, `srun` has to contain the flags similar to `salloc` in addtion to `--pty bash`.
 
 ```bash
-srun --x11 --partition=triton --account=comp --time=0:10:00 --mems-per-cpu=1G --cpus-per-task=1 --pty bash
+srun --x11 --partition=triton --account=comp --time=0:10:00 --mem-per-cpu=1G --cpus-per-task=1 --pty bash
 ```
 
 ### `tmux`
@@ -392,9 +390,7 @@ Could not acquire name on session bus
 Only one session can be acquired at once. You must discuss with your friends to resolve this conflict.
 
 3. **My session is hanged/frozen, and I can't connect to it anymore. What should I do?**
-
 In this situation, you have to kill the program(s) leading to the problem. If you can't find the root cause, just kill all your works.
-
 First, use Terminal or Powershell to connect to the server
 ```bash
 ssh <your username>@<your login>
