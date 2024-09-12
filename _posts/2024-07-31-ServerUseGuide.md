@@ -405,7 +405,7 @@ killall -u `whoami`
 ```
 All of your running programs on the server would be terminated, and you're supposed to have a fresh session.
 
-4. **Those commands are long and tedious to type, like me torturing myself. How can I do the work but not typing that much?**
+4. **I'm getting tired of typing out these lengthy commands. Is there a shortcut or easier way to do this?**
 
 Typing long commands can be time-consuming and prone to errors. To streamline your workflow, consider using aliases and Makefiles.
 Research online to learn how to create these tools.
@@ -423,4 +423,4 @@ Now, instead of typing the entire srun command, you can simply use `srun_triton`
 srun_triton
 ```
 
-For more advanced users, customize your shell configuration files to suit your specific needs."
+For more advanced users, customize your shell configuration files to suit your specific needs.
