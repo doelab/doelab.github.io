@@ -31,8 +31,8 @@ The root of this repository contains all the lab exercises for the course. Each 
 
 ### List of Lab Exercises
 
-1. [Lab 1: Simple warm-up]
-2. [Lab 2: Matrix problem]
-3. [Lab 3: Asynchronous FIFO]
-4. [Lab 4: Calculator]
-5. [Lab 5: Tensor32 FP]
+1. [Lab 1: Simple warm-up]({% post_url 2024-07-31-LogicDesignLab1 %})
+2. [Lab 2: Matrix problem]({% post_url 2024-08-01-LogicDesignLab2 %})
+3. [Lab 3: Asynchronous FIFO]({% post_url 2024-08-04-LogicDesignLab3 %})
+4. [Lab 4: Calculator]({% post_url 2024-08-04-LogicDesignLab4 %})
+5. [Lab 5: Tensor32 FP]({% post_url 2024-08-04-LogicDesignLab5 %})
