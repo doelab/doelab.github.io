@@ -42,6 +42,8 @@ The lab will include the following steps:
 
 ## Background
 
+### FIR Filter
+
 Finite Impulse Response (FIR) filters are an essential component in digital signal processing (DSP) systems, widely used for tasks such as noise reduction, signal smoothing, and frequency selection. FIR filters are known for their stability and linear phase properties, making them suitable for various applications that require precise signal manipulation.
 
 In digital systems, FIR filters are typically implemented using discrete-time convolutions of the input signal with a set of filter coefficients. These coefficients determine the filter's frequency response, and they can be designed to pass, reject, or attenuate specific frequency bands. The number of coefficients, or "taps," directly impacts the filter's performance, with more taps generally leading to more accurate filtering but also increased computational complexity.
@@ -56,9 +58,27 @@ To address this, pipelining techniques can be applied. By introducing pipeline s
 
 The above schematic is just an example of a pipelined FIR filter. You are not required to follow this design exactly and are encouraged to propose your own design approach. Feel free to explore different architectures or optimizations that suit your specific implementation and performance goals.
 
+### DE10 Standard Development Kit
+
+In this Lab 1, we will use the DE10 kit, a powerful FPGA development platform based on the Cyclone V SX SoC—5CSXFC6D6F31C6N. The DE10 kit offers a wide range of resources, including:
+
+  - 110K LEs, 41,509 ALMs  
+  - 5,761 Kbits embedded memory  
+  - 6 FPGA PLLs and 3 HPS PLLs  
+  - 2 Hard Memory Controllers  
+  - 112 DSP blocks
+  - 64MB (32Mx16) SDRAM on FPGA
+  - 24-bit Audio CODEC (supports line-in, line-out, and can be used as DAC and ADC)
+
+![](de10-audio.jpg)
+
+This makes it ideal for digital signal processing (DSP) tasks. In this lab, we will use the Audio CODEC as a DAC to output the 24-bit processed data through the audio output port. Additionally, in Lab 203B3, we provide a 3.5mm jack to BNC cable, which you can use to connect the output to an oscilloscope for visualizing the signal.
+
+![](3.5-bnc.jpg)
+
 ## Assignment Overview
 
-In this lab assignment, you will design and simulate an FIR filter using Verilog or VHDL. Your task is to implement the FIR filter based on your specifications and verify its functionality through simulation. To assist you in this process (though you are welcome to use your own resources if preferred), the following resources are provided:
+In this lab assignment, you will design and simulate an FIR filter using Verilog or SystemVerilog. Your task is to implement the FIR filter based on your specifications and verify its functionality through simulation. To assist you in this process (though you are welcome to use your own resources if preferred), the following resources are provided:
 
 - A **testbench** ([`FIR_tb.sv`](https://github.com/doelab/EE3041_DSPonFPGA/blob/main/Lab1/FIR_tb.sv)) to simulate and verify the FIR filter design.
 - **Three input signal samples** ([`samples`](https://github.com/doelab/EE3041_DSPonFPGA/tree/main/Lab1/samples)) to be used for testing the filter’s performance.
@@ -79,6 +99,17 @@ The sample signals are 24-bit and located in [`samples`](https://github.com/doel
 3. **Noisy ECG signal** ([`ecg.hex`](https://github.com/doelab/EE3041_DSPonFPGA/blob/main/Lab1/samples/ecg.hex)): A typical ECG (electrocardiogram) signal with noise. The goal is to filter out the noise and recover the clean ECG waveform for accurate analysis.   ![](ecg_wave.png)
 
 Use these signals to test your FIR filter design, ensuring it successfully removes the noisy components without distorting the essential parts of the signal.
+
+## Demonstration on FPGA
+
+If you're aiming for a high grade, you'll need to implement your design on the FPGA. You'll use the DE10 Standard Development Kit, as introduced earlier. The requirements are straightforward:
+
+1. Store the original input sample into BRAM or SDRAM (if BRAM capacity is insufficient, or trim the sample to fit in BRAM).
+2. The input/original and output/processed 24-bit data should be sent through the audio CODEC (acting as a DAC), and output as an analog signal through the 3.5mm audio port on the kit.
+3. Use the switches on the kit to toggle between the input/original and output/processed data.
+4. Finally, connect the 3.5mm to BNC cable to the port and display the signal on the oscilloscope.
+
+This setup will allow you to demonstrate your design in real-time and analyze the performance of your FIR filter implementation.
 
 ## For Credit
 
@@ -102,6 +133,19 @@ Your report should be concise but detailed enough to clearly explain your design
 - If the filter doesn’t perform well, offer a detailed analysis of why the results are not as expected and propose improvements or solutions.
   
 Your report should focus on quality rather than length. While it shouldn’t be excessively long, it needs to be thorough and well-structured. Points will be deducted for poor reporting, such as missing key details, insufficient analysis, or unclear presentation. Make sure to present your work in a professional and readable format.
+
+## Frequently asked questions
+
+1. **Where to start with Lab 1?**  
+   In Lab 1, you will be designing a **FIR filter**. The theory slides provide detailed guidance on the design process and optimization techniques. After designing the filter, you'll use three sample signals to verify your design. The grading criteria are clearly outlined in the lab assignment.
+
+2. **Which tool do we need to use for this Lab?**  
+   For the DSP on FPGA lab, most tasks involve simulation. You can use tools such as **ModelSim/QuestaSim**, **Verilator**, **VCS+Verdi**, or **Xcelium**.  
+   - **QuestaSim** and **Verilator** are free and can be installed on your personal computer.  
+   - For **VCS+Verdi** or **Xcelium**, you can request access to the server from your instructor to use them.
+
+3. **How can we do the demonstration on FPGA?**  
+   The guide has been updated for FPGA demonstration. You can follow the instructions in the updated guide for setting up your demo on the DE10 kit.
 
 ## How To Turn In Your Solution
 
