@@ -48,9 +48,8 @@ We want to see you succeed, but you have to ask for help.
 Some part of the big project is **Simulation** only, however, your synthesis result on Quartus for the DE10 Kit still affects your credit, so code should be synthesizable to resources/timing.
 
 - [Part 1: FIR Filter]({% post_url 2024-09-14-DSPonFPGALab1 %})
-- Part 2: IIR Filter (TBA)
-- Part 3: Wave Generator (TBA)
-- Part 4: Oscilloscope (TBA)
+- [Part 2: IIR Filter]({% post_url 2024-10-11-DSPonFPGALab2 %})
+- Part 3: TBA
 
 ## For Credit
 

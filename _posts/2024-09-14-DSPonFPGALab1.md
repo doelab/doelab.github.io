@@ -31,14 +31,14 @@ We want to see you succeed, but you have to ask for help.
 
 In this lab, students will design an FIR filter using Verilog or SystemVerilog. The focus will be on understanding the filter design process, coding the filter architecture, and running simulations to verify the functionality of the FIR filter. Students are required to simulate the design to confirm its correctness.
 
-For those seeking additional credit, there is an option to synthesize the design onto an FPGA and perform real-time testing. This will allow students to demonstrate their filter implementation on hardware, further reinforcing their understanding of FPGA-based digital signal processing (DSP).
+For those seeking high score, there is an option to synthesize the design onto an FPGA and perform real-time testing. This will allow students to demonstrate their filter implementation on hardware, further reinforcing their understanding of FPGA-based digital signal processing (DSP).
 
 The lab will include the following steps:
 
 - Understanding the theory behind FIR filter design.
 - Implementing the FIR filter architecture using HDL.
 - Running simulations to verify the functionality of the filter.
-- Optional: Synthesizing the design on an FPGA and conducting real-time testing for extra credit.
+- Synthesizing the design on an FPGA and conducting real-time testing.
 
 ## Background
 
@@ -146,6 +146,18 @@ Your report should focus on quality rather than length. While it shouldn’t be 
 
 3. **How can we do the demonstration on FPGA?**  
    The guide has been updated for FPGA demonstration. You can follow the instructions in the updated guide for setting up your demo on the DE10 kit.
+
+4. **What is the format of the .hex file?**  
+   Each value in each line of the hex file is a signed 24-bit value in hexadecimal format. You can convert it to decimal and analyze it normally in MATLAB.
+
+5. **If multiplication is used, do I need to write out the multiplier, or can I just use the multiplication operator?**  
+   You can use the multiplication operator.
+
+6. **In my code, I use a for loop for calculations. Is that acceptable?**  
+   You can code in any way that works to get the simulation result. However, if you plan to synthesize the design onto the FPGA, the code must be synthesizable.
+
+7. **Is FPGA limited to a maximum of 33 taps?**  
+   When simulating, you can use as many taps as you like. When synthesizing and loading onto the FPGA kit, you need to be mindful of the resources on the DE10 and adjust the number of taps accordingly.
 
 ## How To Turn In Your Solution
 
