@@ -14,12 +14,12 @@ timezone: Asia/Saigon
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Department of Electronics, HCMUT # the main title
+title: Department of Electronics # the main title
 
-tagline: Welcome to the Department of Electronics at Ho Chi Minh City University of Technology (HCMUT). Our department provides various resources and labs to support students in their academic and research activities.
+tagline: Welcome to the Department of Electronics. Our department's github page provides various resources and labs to support students in their academic and research activities.
 # it will display as the sub-title
 
-description: Welcome to the Department of Electronics at Ho Chi Minh City University of Technology (HCMUT). Our department provides various resources and labs to support students in their academic and research activities. # used by seo meta and the atom feed Welcome to the Department of Electronics at Ho Chi Minh City University of Technology (HCMUT). Our department provides various resources and labs to support students in their academic and research activities.
+description: Welcome to the Department of Electronics. Our department provides various resources and labs to support students in their academic and research activities. # used by SEO
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -34,7 +34,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Department of Electronics, Ho Chi Minh City University of Technology
+  name: Department of Electronics
   email: bmdt@hcmut.edu.vn # change to your email address
   links:
     # The first element serves as the copyright owner's link
