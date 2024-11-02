@@ -1,6 +1,6 @@
 ---
-title:  EE3041 DSP on FPGA Big Project Lab 2
-date: 2024-09-14 11:01:00 +0700
+title:  EE3041 DSP on FPGA Big Project Lab 2 - IIR Filter
+date: 2024-10-11 08:00:00 +0700
 categories: [Lab Courses, EE3041 DSP on FPGA Big Project]
 tags: [lab, dsponfpga, fpga, courses]      # TAG names should always be lowercase
 author: link
@@ -92,4 +92,10 @@ Some of these questions are already answered in Lab 1. Please avoid repeating pr
 
 ## How To Turn In Your Solution
 
-Submit your report and code as a zip file through LMS.
+This semester we will be using LMS, simply submit the zip file with your reports and codes.
+
+## Demos and Late Penalty
+
+We will have demo / presentation times on of class times on or near the due date. Since we will demo from the files in your zip, it is possible that you’ll demo on a following day.
+
+**Define Late:** Lateness is determined by the file dates of your submission on LMS.

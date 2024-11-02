@@ -49,7 +49,7 @@ Some part of the big project is **Simulation** only, however, your synthesis res
 
 - [Part 1: FIR Filter]({% post_url 2024-09-14-DSPonFPGALab1 %})
 - [Part 2: IIR Filter]({% post_url 2024-10-11-DSPonFPGALab2 %})
-- Part 3: TBA
+- [Part 3: Audio Equalizer]({% post_url 2024-11-02-DSPonFPGALab3 %})
 
 ## For Credit
 

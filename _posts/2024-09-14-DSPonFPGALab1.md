@@ -1,5 +1,5 @@
 ---
-title:  EE3041 DSP on FPGA Big Project Lab 1
+title:  EE3041 DSP on FPGA Big Project Lab 1 - FIR Filter
 date: 2024-09-14 11:01:00 +0700
 categories: [Lab Courses, EE3041 DSP on FPGA Big Project]
 tags: [lab, dsponfpga, fpga, courses]      # TAG names should always be lowercase
