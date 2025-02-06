@@ -1,6 +1,6 @@
 ---
 title:  EE3041 DSP on FPGA Big Project Lab 3 - Audio Equalizer
-date: 2024-11-02 08:00:00 +0700
+date: 2025-02-06 09:20:00 +0700
 categories: [Lab Courses, EE3041 DSP on FPGA Big Project]
 tags: [lab, dsponfpga, fpga, courses]      # TAG names should always be lowercase
 author: link
@@ -22,7 +22,7 @@ The objective of this lab is to design, implement, and test an audio equalizer u
 Big project is to be accomplished in groups. All work must be from your own team members.
 
 Hints from others can be of great help, both to the hinter and the hintee.  
-Thus, discussions and hints about the assignment are encouraged. However, the project must be coded and written up in groups (you may not show, nor view, any source code from other students’ groups). We may use automated tools to detect copying.
+Thus, discussions and hints about the assignment are encouraged. However, the project must be coded and written up in groups (you may not show, nor view, any source code from other students’ groups). We **WILL** use automated tools to detect copying.
 
 Use Emails/LMS to ask questions or come visit us (203B3) during office hours.  
 We want to see you succeed, but you have to ask for help.
@@ -73,10 +73,10 @@ If you're aiming for a high grade, you’ll need to implement your design on the
 
 - **0.5 point**: Demonstrates understanding of equalizers, including the basic filter requirements for different frequency bands. 
 - **0.5 point**: Provides a well-reasoned explanation for choosing FIR, IIR, or a combination of both and defines the complete specifications for the equalizer.
-- **3 points**: Implements a working audio equalizer with three frequency bands (bass, mid, and treble). These points are awarded only if you successfully simulate and verify the design.
-- **3 points**: Completes and verifies the filter design in simulation, ensuring it meets the required specifications for each frequency band.
-- **2 points**: Demonstrates successful real-time control of gain for each frequency band using FPGA switches or keys using audio sample from an external device.
-- **1 point**: Earned by achieving at least one of the bonus criteria below.
+- **2 points**: Implements a working audio equalizer with three frequency bands (bass, mid, and treble). These points are awarded only if you successfully simulate and verify the design.
+- **2 points**: Completes and verifies the filter design in simulation, ensuring it meets the required specifications for each frequency band.
+- **2 points**: Synthesizes the design, you should check the report to make sure the design is synthesizable.
+- **3 points**: Demonstrates successful real-time control of gain for each frequency band using FPGA switches or keys using audio sample from an external device.
 - **Bonus points**:
   - Adds additional frequency bands beyond the three required.
   - Implements a program that allows real-time adjustment of frequency gain via communication with the FPGA.
@@ -86,7 +86,7 @@ If you're aiming for a high grade, you’ll need to implement your design on the
 
 ## Reporting Requirements
 
-Your report should explain your design choices, simulations, and results. Ensure it includes clear evidence of your filter's performance, such as waveforms and graphs, and a detailed analysis of any issues encountered. For more details, refer to [Lab 1 - FIR Filter, Reporting Requirements]({% post_url 2024-09-14-DSPonFPGALab1 %}#reporting-requirements)
+Your report should explain your design choices, simulations, and results. Ensure it includes clear evidence of your filter's performance, such as waveforms and graphs, and a detailed analysis of any issues encountered. For more details, refer to [Lab 2 - FIR and IIR Filters, Reporting Requirements]({% post_url 2025-02-06-DSPonFPGALab2 %}#reporting-requirements)
 
 ## How To Turn In Your Solution
 

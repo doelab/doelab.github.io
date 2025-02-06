@@ -1,6 +1,6 @@
 ---
 title:  EE3041 DSP on FPGA Big Project
-date: 2024-09-07 07:56:00 +0700
+date: 2025-02-06 08:00:00 +0700
 categories: [Lab Courses, EE3041 DSP on FPGA Big Project]
 tags: [lab, dsponfpga, fpga, courses]      # TAG names should always be lowercase
 author: haka
@@ -16,7 +16,7 @@ media_subpath: /assets/img/DSPonFPGA/
 
 The big project contains many parts. This is for you to apply the knowledge surrounding the course to a real-world problem. You will be given a set of requirements and you will need to design, implement, and test a solution.
 
-This is a **group** project, to be done on your Altera DE10 board.
+This is a **group** project, to be done on DE10 Standard Development Kit (DE2 will **NOT** be accepted).
 
 Note: Do **NOT** use IP CATALOG for this lab.
 
@@ -45,21 +45,13 @@ We want to see you succeed, but you have to ask for help.
 
 ## Project Overview
 
-Some part of the big project is **Simulation** only, however, your synthesis result on Quartus for the DE10 Kit still affects your credit, so code should be synthesizable to resources/timing.
-
-- [Part 1: FIR Filter]({% post_url 2024-09-14-DSPonFPGALab1 %})
-- [Part 2: IIR Filter]({% post_url 2024-10-11-DSPonFPGALab2 %})
-- [Part 3: Audio Equalizer]({% post_url 2024-11-02-DSPonFPGALab3 %})
+- [Part 1: Waveform Generator]({% post_url 2025-02-06-DSPonFPGALab1 %})
+- [Part 2: FIR and IIR Filters]({% post_url 2025-02-06-DSPonFPGALab2 %})
+- [Part 3: Audio Equalizer]({% post_url 2025-02-06-DSPonFPGALab3 %})
 
 ## For Credit
 
 You will present your project to the class. You will demonstrate your project to the class. You will submit a report on your project to LMS.
-
-### For Extra Credit
-
-Lab 3 and 4 could be demonstrated for real on the DE10 board. If you do this, you will receive extra credit. (Email me to borrow the 3.5mm to BNC cable, or you could buy it yourself).
-
-## Some Other Things You Should Learn
 
 ## How To Turn In Your Solution
 
