@@ -10,9 +10,10 @@ description: This guide serves as a comprehensive manual for accessing and utili
 ---
 # SERVER USER GUIDE
 
-| Author  | Email                     | Version |
-|---------|---------------------------|:-------:|
-| Hai Cao | cxhai.sdh221@hcmut.edu.vn | 1.0     |
+| Author      | Email                     | Version |
+|-------------|---------------------------|:-------:|
+| Hai Cao     | cxhai.sdh221@hcmut.edu.vn | 1.0     |
+| Hung Nguyen | ngthung@hcmut.edu.vn      | 2.0     |
 
 ## Overview
 
@@ -22,22 +23,45 @@ This guide serves as a comprehensive manual for accessing and utilizing the cent
 
 Accessing the DOE server requires a secure connection facilitated by a VPN client (Wireguard). At the beginning of each semester, TAs will send an email providing students with the necessary VPN configuration and user account credentials. Students must meticulously follow the provided configuration guide to establish a stable connection.
 
-> _Note:_ Some routers may be configured to block VPN connections, which can prevent students from connecting to the DOE server. If this occurs, try using a cellular network or a different internet connection.
+The necassary configuration file is a *.conf file. Do not under any circumstance public this file outside of the class usage, as it contains sensitive information.
+
+For Windows: [Wireguard Installation Guide](https://www.wireguard.com/install/)
+For MacOS: install brew then run `brew install wireguard-tools` to install Wireguard. Then use wg-quick up/down <path-to-config-file> to connect/disconnect.
+For Linux: install Wireguard using the package manager of your distribution. Then use wg-quick up/down <path-to-config-file> to connect/disconnect.
+
+> _Note:_ Some routers may be configured to block VPN connections, which can prevent students from connecting to the DOE server. If this occurs, try using a cellular network or a different internet connection. Please note that HCMUT01 and HCMUT02 is known to block VPN connections.
+
+After establishing a VPN connection, students test ping their corresponding login server. E.g `ping anthony.doelab.site` for the Anthony login server.
+
+You can then use Remote Desktop Protocol (RDP) to connect to the server. For Windows, you can use the built-in Remote Desktop Connection application. For MacOS, you can use the Microsoft Windows application available on the App Store. For Linux, you can use Remmina or any other RDP client. Then connecto to the login server domain name (e.g anthony.doelab.site) with your provided username and password. You are encourage to change your password after the first login.
+
+You can also use SSH to connect to the server. For Windows, you can use the built-in OpenSSH client. For MacOS and Linux, you can use the built-in SSH client. Then connect to the login server domain name (e.g anthony.doelab.site) with your provided username and password. E.g `ssh <username>@anthony.doelab.site`
+
+In addition, it is possible to use a SFTP File Explorer to ease file exchange between your local machine and the server. For Windows, MacOS, Linux, you can use FileZilla. Then connect to the login server domain name (e.g sftp://anthony.doelab.site) with your provided username and password.
+
+Do not change your home structure/bash library without permission. If you need to install software, please contact your advisor.
 
 ## DOE Resources
 
-The server includes multiple compute nodes, each equipped with varying computational resources to support a wide range of academic applications. Below is a summary of the available nodes and their resource allocations:
+The server includes multiple compute nodes, each equipped with varying computational resources to support a wide range of academic applications. 
+
+Below is a summary of the available nodes and their resource allocations (At this moment, please contact your advisor to know the name of the compute node to connect): // TODO: Update the table
 
 | Node/Partition | Max CPU | Max RAM | Max Time | Running Jobs/User | Submit Jobs/User |
 |----------------|:-------:|:-------:|:--------:|:-----------------:|:----------------:|
-| `phobos`       | 3       | 15G     | 7 days   | 2                 | 5                |
-| `deimos`       | 3       | 15G     | 7 days   | 2                 | 5                |
-| `anteros`      | 3       | 15G     | 7 days   | 2                 | 5                |
-| `triton`       | 2       | 8G      | 2 hours  | 2                 | 3                |
-| `rhodes`       | 2       | 8G      | 3 hours  | 2                 | 3                |
-| `proteus`      | 2       | 8G      | 3 hours  | 2                 | 3                |
+| `list updating`     | 3       | 15G     | 7 days   | 2                 | 5                |
+
 
 Each node's specifies the maximum number of CPUs, the maximum amount of RAM, and the maximum allowable runtime for a job. Additionally, there are also the limits on concurrent running jobs and job submissions per user to thwart resource monopolization and ensure fair distribution among all users.
+
+## Simple connection
+
+After login to the login server, you can use a simple slurm command to instant the compute node. E.g:
+
+``srun --x11 --partition=triton --account=comp --time=0:10:00 --mem-per-cpu=1G --cpus-per-task=1 --pty bash``
+This command will allocate a compute node in the `triton` partition for 10 minutes with 1GB of memory per CPU and 1 CPU.
+
+For the CPU flags, most can be compute with 1 core. Use ``-c 2`` for 2 cores, ``-c 1`` for 1 cores, etc. (in replace for the --cpu-per-task flag).
 
 ## Batch Jobs and Scripting
 
