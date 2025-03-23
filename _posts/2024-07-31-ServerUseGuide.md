@@ -440,3 +440,21 @@ Now, instead of typing the entire srun command, you can simply use `srun_triton`
 srun_triton
 ```
 For more advanced users, customize your shell configuration files to suit your specific needs.
+
+Question 5. **I use a GUI tool that say "24-bit color is not supported, please use 16-bit", I changed my RDP to 16-bit but now it doesn't let me login/close the RDP suddenly**
+
+This is a known issue with the RDP client. It happens because the previous RDP session is still running in the background with 24-bit color.
+
+To resolve this, you can use the following command to kill the RDP session:
+```bash
+ssh <your username>@<your login> pkill -f xrdp
+```
+
+or you can use the following command to kill the RDP session:
+```bash
+ssh <your username>@<your login> 
+htop 
+```
+Then, find the xrdp process and kill it.
+```
+Then, you can reconnect to the server.
