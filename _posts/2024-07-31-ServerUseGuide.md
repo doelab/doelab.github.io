@@ -456,7 +456,7 @@ ssh <your username>@<your login>
 htop 
 ```
 Then, find the xrdp process and kill it.
-```
+
 Then, you can reconnect to the server.
 
 Question 6. **Where are the tools? I cannot find any.**
@@ -473,5 +473,6 @@ module load <tool_name>
 ```
 
 Question 7. **I cannot connect to the server.**
+
 Please ensure you read the Remote Access section carefully. If you still cannot connect, please contact your advisor.
 
