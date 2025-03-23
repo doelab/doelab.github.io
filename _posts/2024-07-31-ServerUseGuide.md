@@ -458,3 +458,20 @@ htop
 Then, find the xrdp process and kill it.
 ```
 Then, you can reconnect to the server.
+
+Question 6. **Where are the tools? I cannot find any.**
+
+You need to RDP/SSH to the login node and `srun` to the compute node. The tools are installed in the compute node, not the login node.
+
+You can see available tools by running the following command:
+```bash
+module avail
+```
+and load the tools you need by running the following command:
+```bash
+module load <tool_name>
+```
+
+Question 7. **I cannot connect to the server.**
+Please ensure you read the Remote Access section carefully. If you still cannot connect, please contact your advisor.
+
