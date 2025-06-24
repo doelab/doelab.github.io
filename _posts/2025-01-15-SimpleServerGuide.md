@@ -79,12 +79,12 @@ module unload <tool>  # Unload a specific tool
 
 ## Step 4: Setup SSH Remote Development
 
-Configure your preferred IDE (VSCode, etc.) for SSH remote development:
+Configure your preferred IDE (VSCode, etc.) on your laptop for SSH remote development:
 - Enable SSH remote extension
 - Connect to the server using SSH
 - Code and use terminal directly from your IDE
 
-See detail in [this article](https://code.visualstudio.com/docs/remote/ssh).
+See detail in [this article ](https://code.visualstudio.com/docs/remote/ssh) from Microsoft.
 
 ## Step 5: File Transfer with FileZilla
 
