@@ -84,6 +84,8 @@ Configure your preferred IDE (VSCode, etc.) for SSH remote development:
 - Connect to the server using SSH
 - Code and use terminal directly from your IDE
 
+See detail in [this article](https://code.visualstudio.com/docs/remote/ssh).
+
 ## Step 5: File Transfer with FileZilla
 
 1. Open FileZilla
