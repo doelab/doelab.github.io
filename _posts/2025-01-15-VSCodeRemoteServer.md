@@ -62,8 +62,6 @@ Before starting, ensure you have:
 5. Enter your password when prompted
 6. You will be connected to the server and can start developing and run code with the terminal from VSCode similar to SSH.
 
-![VSCode Connected](../assets/img/VSCodeRemote/connected.png)
-
 ## Step 4: Access Compute Node
 
 Once connected to the server, you'll be in the login node. To access a compute node:
@@ -71,7 +69,7 @@ Once connected to the server, you'll be in the login node. To access a compute n
 1. Open a terminal in VSCode (Ctrl+`)
 2. Run the srun command:
    ```bash
-   srun --x11 --pty bash
+   srun --pty bash
    ```
 3. Your terminal will now show the compute node name
 
