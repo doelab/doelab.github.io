@@ -45,11 +45,13 @@ Before starting, ensure you have:
    ```
    Example: `ssh comp@anthony.doelab.site`
 
-![SSH](<../assets/img/VSCodeRemote/SSH command.png>)
+![SSH](<../assets/img/VSCodeRemote/SSH_command.png>)
 
 1. Choose the SSH configuration file location (usually the default)
 2. VSCode will add the connection to your SSH config
 3. Enter your password when prompted and wait for VSCode to download on the server.
+
+![alt text](../assets/img/VSCodeRemote/wait_vscode.png)
 
 ## Step 3: Connect to Server
 
@@ -58,6 +60,9 @@ Before starting, ensure you have:
 3. Select your configured server from the list
 4. Choose the platform (Linux)
 5. Enter your password when prompted
+6. You will be connected to the server and can start developing and run code with the terminal from VSCode similar to SSH.
+
+![VSCode Connected](../assets/img/VSCodeRemote/connected.png)
 
 ## Step 4: Access Compute Node
 
@@ -69,8 +74,6 @@ Once connected to the server, you'll be in the login node. To access a compute n
    srun --x11 --pty bash
    ```
 3. Your terminal will now show the compute node name
-
-![Compute Node Access](../assets/img/VSCodeRemote/compute-node.png)
 
 ## Step 5: Load Required Modules
 
@@ -88,7 +91,7 @@ module load questasim # Load QuestaSim (example)
 2. Navigate to your project directory
 3. Select the folder to open it in VSCode
 
-![Open Folder](../assets/img/VSCodeRemote/open-folder.png)
+![alt text](../assets/img/VSCodeRemote/OpenFolder.png)
 
 ## Step 7: Development Workflow
 
@@ -101,6 +104,8 @@ module load questasim # Load QuestaSim (example)
 - Use the integrated terminal for running commands
 - Execute synthesis, simulation, and other tools
 - Monitor processes and system resources
+
+![alt text](../assets/img/VSCodeRemote/terminal.png)
 
 ### Debugging
 - Set breakpoints in your code
@@ -115,7 +120,7 @@ VSCode provides excellent support for working with multiple files:
 2. **Side-by-side**: Drag tabs to create side-by-side views
 3. **File Explorer**: Use the file explorer to navigate your project
 
-![Multiple Files](../assets/img/VSCodeRemote/multiple-files.png)
+![alt text](../assets/img/VSCodeRemote/multifolder.png)
 
 ## Step 9: Extensions and Settings
 
