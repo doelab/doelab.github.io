@@ -14,7 +14,7 @@ media_subpath: /assets/img/DSPonFPGA/Lab1/
 # Lab 1 - Waveform Generator
 
 ## Objective
-The primary objective of this lab is to design and implement a versatile waveform generator using an FPGA. The generator should be capable of producing various types of waveforms with adjustable parameters such as frequency, amplitude, and duty cycle. Additionally, the system should be able to inject noise into these waveforms. The final implementation will be demonstrated on an FPGA using the DE10 Standard Development Kit (DE2 will **NOT** be accepted in this lab or any subsequent labs), with the output displayed on an oscilloscope.
+The primary objective of this lab is to design and implement a versatile waveform generator using an FPGA. The generator should be capable of producing various types of waveforms with adjustable parameters such as frequency, amplitude, and duty cycle. Additionally, the system should be able to inject noise into these waveforms. The final implementation will be demonstrated on an FPGA using the DE10 Standard Development Kit or the DE2 Standard Development Kit base on availability, with the output displayed on an oscilloscope.
 
 ## A Note about Collaboration
 
@@ -69,6 +69,8 @@ In this Lab 1, we will use the [DE10 Standard Development Kit](https://ftp.intel
 This makes it ideal for digital signal processing (DSP) tasks. In this lab, we will use the Audio CODEC as a DAC to output the 24-bit processed data through the audio output port. Additionally, in Lab 203B3, we provide a 3.5mm jack to BNC cable, which you can use to connect the output to an oscilloscope for visualizing the signal.
 
 ![](3.5-bnc.jpg)
+
+You can also buy your own cable: https://s.shopee.vn/7fQoF97hYY
 
 ## Assignment Overview
 
