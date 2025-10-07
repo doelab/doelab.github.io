@@ -17,7 +17,7 @@ media_subpath: /assets/img/DSPonFPGA/
 
 Bài tập lớn bao gồm nhiều phần. Điều này là để bạn áp dụng kiến thức xung quanh khóa học vào một vấn đề thực tế. Bạn sẽ được cung cấp một bộ yêu cầu và bạn sẽ cần thiết kế, triển khai và kiểm tra một giải pháp.
 
-Đây là dự án **nhóm**, được thực hiện trên DE10 Standard Development Kit (DE2 sẽ **KHÔNG** được chấp nhận).
+Đây là dự án **nhóm**, được thực hiện trên DE10 Standard Development Kit hoặc DE2 Standard Development Kit (sinh viên được tự do lựa chọn).
 
 Lưu ý: **KHÔNG** sử dụng IP CATALOG cho bài lab này.
 

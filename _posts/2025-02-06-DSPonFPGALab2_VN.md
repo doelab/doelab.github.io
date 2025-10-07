@@ -80,7 +80,7 @@ Mục tiêu chính của bạn là hoàn thành thiết kế bộ lọc FIR và 
 
 ## Trình diễn FPGA
 
-Để đạt được điểm cao, bạn phải triển khai thiết kế của bạn trên FPGA bằng cách sử dụng DE10 Standard Development Kit. Trình diễn của bạn nên bao gồm hai mẫu: sóng tuần hoàn và sóng âm thanh. Đảm bảo cả hai trình diễn được chuẩn bị tốt và thể hiện rõ ràng chức năng và hiệu suất của thiết kế của bạn.
+Để đạt được điểm cao, bạn phải triển khai thiết kế của bạn trên FPGA bằng cách sử dụng DE10 Standard Development Kit hoặc DE2 Standard Development Kit. Trình diễn của bạn nên bao gồm hai mẫu: sóng tuần hoàn và sóng âm thanh. Đảm bảo cả hai trình diễn được chuẩn bị tốt và thể hiện rõ ràng chức năng và hiệu suất của thiết kế của bạn.
 
 1. **Trình diễn Sóng tuần hoàn**  
    - Sử dụng module bạn đã thiết kế trong Lab 1 để tạo sóng tuần hoàn với nhiễu được thêm vào. Tín hiệu nhiễu này sẽ phục vụ như đầu vào cho bộ lọc của bạn.  
@@ -94,7 +94,7 @@ Mục tiêu chính của bạn là hoàn thành thiết kế bộ lọc FIR và 
    - Xử lý tín hiệu âm thanh nhiễu thông qua bộ lọc của bạn để tạo ra đầu ra âm thanh sạch, đã lọc.  
    - Phát âm thanh đã lọc qua loa để thể hiện hiệu quả của bộ lọc của bạn.  
    - Chọn mẫu âm thanh thể hiện rõ ràng sự khác biệt giữa phiên bản nhiễu và đã lọc. 
-   - Bạn có thể sử dụng cáp âm thanh 3.5mm đến 3.5mm để kết nối đầu ra âm thanh của laptop với đầu vào âm thanh của bảng DE10. Đầu ra âm thanh của bảng DE10 có thể được kết nối với loa.
+   - Bạn có thể sử dụng cáp âm thanh 3.5mm đến 3.5mm để kết nối đầu ra âm thanh của laptop với đầu vào âm thanh của bảng DE10 hoặc DE2. Đầu ra âm thanh của bảng có thể được kết nối với loa.
   
    ![auxcable](cable.png)
 

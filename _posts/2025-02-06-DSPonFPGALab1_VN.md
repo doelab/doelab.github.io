@@ -14,7 +14,7 @@ media_subpath: /assets/img/DSPonFPGA/Lab1/
 # Lab 1 - Bộ tạo sóng (Waveform Generator)
 
 ## Mục tiêu
-Mục tiêu chính của bài lab này là thiết kế và triển khai một bộ tạo sóng đa năng sử dụng FPGA. Bộ tạo sóng phải có khả năng tạo ra các loại sóng khác nhau với các tham số có thể điều chỉnh như tần số, biên độ và chu kỳ nhiệm vụ. Ngoài ra, hệ thống phải có khả năng tiêm nhiễu vào các sóng này. Việc triển khai cuối cùng sẽ được trình diễn trên FPGA sử dụng DE10 Standard Development Kit hoặc DE2 Standard Development Kit tùy theo tình trạng có sẵn, với đầu ra được hiển thị trên oscilloscope.
+Mục tiêu chính của bài lab này là thiết kế và triển khai một bộ tạo sóng đa năng sử dụng FPGA. Bộ tạo sóng phải có khả năng tạo ra các loại sóng khác nhau với các tham số có thể điều chỉnh như tần số, biên độ và chu kỳ nhiệm vụ. Ngoài ra, hệ thống phải có khả năng tiêm nhiễu vào các sóng này. Việc triển khai cuối cùng sẽ được trình diễn trên FPGA sử dụng DE10 Standard Development Kit hoặc DE2 Standard Development Kit (sinh viên được tự do lựa chọn), với đầu ra được hiển thị trên oscilloscope.
 
 ## Lưu ý về hợp tác
 
@@ -85,7 +85,7 @@ Bạn cũng có thể mua cáp riêng của mình: https://s.shopee.vn/7fQoF97hY
    - Đảm bảo rằng tất cả các sóng và tham số có thể được tạo và điều chỉnh chính xác.
 
 3. **Triển khai trên FPGA**:
-   - Sử dụng DE10 Standard Development Kit để triển khai thiết kế của bạn.
+   - Sử dụng DE10 Standard Development Kit hoặc DE2 Standard Development Kit để triển khai thiết kế của bạn.
    - Kết nối FPGA với oscilloscope bằng cách sử dụng CODEC tích hợp và cáp 3.5-to-BNC.
    - Xác minh đầu ra trên oscilloscope để đảm bảo nó khớp với kết quả mong đợi.
 
@@ -93,7 +93,7 @@ Bạn cũng có thể mua cáp riêng của mình: https://s.shopee.vn/7fQoF97hY
 
 ## Trình diễn trên FPGA
 
-Để thể hiện bộ tạo sóng của bạn trên DE10 Standard Development Kit, việc triển khai của bạn phải đáp ứng các yêu cầu sau:
+Để thể hiện bộ tạo sóng của bạn trên DE10 Standard Development Kit hoặc DE2 Standard Development Kit, việc triển khai của bạn phải đáp ứng các yêu cầu sau:
 
 - **Tạo sóng**: Hệ thống phải tạo nhiều loại sóng, bao gồm sine, vuông, tam giác, răng cưa và ECG. Người dùng phải có thể điều chỉnh tần số, biên độ và chu kỳ nhiệm vụ (nếu có) bằng cách sử dụng công tắc và nút bấm. Phương pháp triển khai linh hoạt.
 - **Tiêm nhiễu**: Hệ thống phải hỗ trợ tiêm nhiễu vào các sóng được tạo.

@@ -80,7 +80,7 @@ Your primary goal is to complete the FIR and IIR filter designs and verify their
 
 ## FPGA Demonstration
 
-To achieve a high grade, you must implement your design on the FPGA using the DE10 Standard Development Kit. Your demonstration should include two samples: a periodic wave and an audio wave. Ensure both demonstrations are well-prepared and clearly showcase the functionality and performance of your design.
+To achieve a high grade, you must implement your design on the FPGA using either the DE10 Standard Development Kit or DE2 Standard Development Kit. Your demonstration should include two samples: a periodic wave and an audio wave. Ensure both demonstrations are well-prepared and clearly showcase the functionality and performance of your design.
 
 1. **Periodic Wave Demonstration**  
    - Use the module you designed in Lab 1 to generate a periodic wave with added noise. This noisy signal will serve as the input for your filters.  
@@ -94,7 +94,7 @@ To achieve a high grade, you must implement your design on the FPGA using the DE
    - Process the noisy audio signal through your filters to produce a clean, filtered output.  
    - Play the filtered audio through a speaker to demonstrate the effectiveness of your filters.  
    - Choose an audio sample that clearly highlights the difference between the noisy and filtered versions. 
-   - You could use the 3.5mm to 3.5mm audio cable to connect the audio output of your laptop to the audio input of the DE10 board. The audio output of the DE10 board can be connected to a speaker.
+   - You could use the 3.5mm to 3.5mm audio cable to connect the audio output of your laptop to the audio input of the DE10 or DE2 board. The audio output of the board can be connected to a speaker.
   
    ![auxcable](cable.png)
 

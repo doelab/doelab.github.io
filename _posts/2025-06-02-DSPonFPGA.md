@@ -16,7 +16,7 @@ media_subpath: /assets/img/DSPonFPGA/
 
 The big project contains many parts. This is for you to apply the knowledge surrounding the course to a real-world problem. You will be given a set of requirements and you will need to design, implement, and test a solution.
 
-This is a **group** project, to be done on DE10 Standard Development Kit (DE2 will **NOT** be accepted).
+This is a **group** project, to be done on either DE10 Standard Development Kit or DE2 Standard Development Kit (students are free to choose).
 
 Note: Do **NOT** use IP CATALOG for this lab.
 

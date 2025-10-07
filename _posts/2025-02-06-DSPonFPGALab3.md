@@ -61,11 +61,11 @@ Your task is to create an audio equalizer with at least three frequency bands: b
 
 ## Demonstration on FPGA
 
-If you're aiming for a high grade, you’ll need to implement your design on the FPGA using the DE10 Standard Development Kit. The requirements for this lab are as follows:
+If you're aiming for a high grade, you'll need to implement your design on the FPGA using either the DE10 Standard Development Kit or DE2 Standard Development Kit. The requirements for this lab are as follows:
 
 - **Demonstrate the basic functionality of your equalizer**, showing that each band (bass, mid, and treble) can be adjusted individually.
-- **Provide a method for adjusting the bands** in real-time. This can be done using the DE10 board’s switches and keys or, for a more advanced solution, through a program on your computer that communicates with the FPGA, allowing you to adjust the frequency bands dynamically.
-- **Perform a live audio test** by playing an audio sample from an external device (e.g., laptop or phone) connected to the DE10 board’s microphone jack. Pass this audio through your equalizer, outputting the modified audio to a speaker so that the effect of each band adjustment on the sound can be clearly heard. This demonstration should highlight the real-time performance and audio quality of your equalizer design. You could use the 3.5mm to 3.5mm audio cable to connect the audio output of your laptop to the audio input of the DE10 board. The audio output of the DE10 board can be connected to a speaker.
+- **Provide a method for adjusting the bands** in real-time. This can be done using the board's switches and keys or, for a more advanced solution, through a program on your computer that communicates with the FPGA, allowing you to adjust the frequency bands dynamically.
+- **Perform a live audio test** by playing an audio sample from an external device (e.g., laptop or phone) connected to the board's microphone jack. Pass this audio through your equalizer, outputting the modified audio to a speaker so that the effect of each band adjustment on the sound can be clearly heard. This demonstration should highlight the real-time performance and audio quality of your equalizer design. You could use the 3.5mm to 3.5mm audio cable to connect the audio output of your laptop to the audio input of the board. The audio output of the board can be connected to a speaker.
 
 ![auxcable](cable.png)
 

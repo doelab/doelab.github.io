@@ -14,7 +14,7 @@ media_subpath: /assets/img/DSPonFPGA/Lab1/
 # Lab 1 - Waveform Generator
 
 ## Objective
-The primary objective of this lab is to design and implement a versatile waveform generator using an FPGA. The generator should be capable of producing various types of waveforms with adjustable parameters such as frequency, amplitude, and duty cycle. Additionally, the system should be able to inject noise into these waveforms. The final implementation will be demonstrated on an FPGA using the DE10 Standard Development Kit or the DE2 Standard Development Kit base on availability, with the output displayed on an oscilloscope.
+The primary objective of this lab is to design and implement a versatile waveform generator using an FPGA. The generator should be capable of producing various types of waveforms with adjustable parameters such as frequency, amplitude, and duty cycle. Additionally, the system should be able to inject noise into these waveforms. The final implementation will be demonstrated on an FPGA using either the DE10 Standard Development Kit or the DE2 Standard Development Kit (students are free to choose), with the output displayed on an oscilloscope.
 
 ## A Note about Collaboration
 
@@ -85,7 +85,7 @@ You can also buy your own cable: https://s.shopee.vn/7fQoF97hYY
    - Ensure that all waveforms and parameters can be correctly generated and adjusted.
 
 3. **Implement on FPGA**:
-   - Use the DE10 Standard Development Kit to implement your design.
+   - Use either the DE10 Standard Development Kit or the DE2 Standard Development Kit to implement your design.
    - Connect the FPGA to an oscilloscope using the built-in CODEC and a 3.5-to-BNC cable.
    - Verify the output on the oscilloscope to ensure it matches the expected results.
 
@@ -93,7 +93,7 @@ You can also buy your own cable: https://s.shopee.vn/7fQoF97hYY
 
 ## Demonstration on FPGA
 
-To showcase your waveform generator on the DE10 Standard Development Kit, your implementation must meet the following requirements:  
+To showcase your waveform generator on either the DE10 Standard Development Kit or DE2 Standard Development Kit, your implementation must meet the following requirements:  
 
 - **Waveform Generation**: The system should generate multiple waveform types, including sine, square, triangle, sawtooth, and ECG. Users must be able to adjust frequency, amplitude, and duty cycle (if applicable) using switches and buttons. The implementation method is flexible.  
 - **Noise Injection**: The system should support injecting noise into the generated waveforms.  

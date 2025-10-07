@@ -61,11 +61,11 @@ Nhiệm vụ của bạn là tạo một bộ cân bằng âm thanh với ít nh
 
 ## Trình diễn trên FPGA
 
-Nếu bạn muốn đạt điểm cao, bạn sẽ cần triển khai thiết kế của bạn trên FPGA bằng cách sử dụng DE10 Standard Development Kit. Các yêu cầu cho bài lab này như sau:
+Nếu bạn muốn đạt điểm cao, bạn sẽ cần triển khai thiết kế của bạn trên FPGA bằng cách sử dụng DE10 Standard Development Kit hoặc DE2 Standard Development Kit. Các yêu cầu cho bài lab này như sau:
 
 - **Thể hiện chức năng cơ bản của bộ cân bằng của bạn**, cho thấy rằng mỗi dải (bass, mid và treble) có thể được điều chỉnh riêng lẻ.
-- **Cung cấp phương pháp điều chỉnh các dải** theo thời gian thực. Điều này có thể được thực hiện bằng cách sử dụng công tắc và phím của bảng DE10 hoặc, để có giải pháp nâng cao hơn, thông qua một chương trình trên máy tính của bạn giao tiếp với FPGA, cho phép bạn điều chỉnh các dải tần số một cách động.
-- **Thực hiện kiểm tra âm thanh trực tiếp** bằng cách phát mẫu âm thanh từ thiết bị bên ngoài (ví dụ: laptop hoặc điện thoại) được kết nối với jack microphone của bảng DE10. Truyền âm thanh này qua bộ cân bằng của bạn, xuất âm thanh đã sửa đổi đến loa để hiệu ứng của mỗi điều chỉnh dải trên âm thanh có thể được nghe rõ ràng. Trình diễn này nên làm nổi bật hiệu suất thời gian thực và chất lượng âm thanh của thiết kế bộ cân bằng của bạn. Bạn có thể sử dụng cáp âm thanh 3.5mm đến 3.5mm để kết nối đầu ra âm thanh của laptop với đầu vào âm thanh của bảng DE10. Đầu ra âm thanh của bảng DE10 có thể được kết nối với loa.
+- **Cung cấp phương pháp điều chỉnh các dải** theo thời gian thực. Điều này có thể được thực hiện bằng cách sử dụng công tắc và phím của bảng hoặc, để có giải pháp nâng cao hơn, thông qua một chương trình trên máy tính của bạn giao tiếp với FPGA, cho phép bạn điều chỉnh các dải tần số một cách động.
+- **Thực hiện kiểm tra âm thanh trực tiếp** bằng cách phát mẫu âm thanh từ thiết bị bên ngoài (ví dụ: laptop hoặc điện thoại) được kết nối với jack microphone của bảng. Truyền âm thanh này qua bộ cân bằng của bạn, xuất âm thanh đã sửa đổi đến loa để hiệu ứng của mỗi điều chỉnh dải trên âm thanh có thể được nghe rõ ràng. Trình diễn này nên làm nổi bật hiệu suất thời gian thực và chất lượng âm thanh của thiết kế bộ cân bằng của bạn. Bạn có thể sử dụng cáp âm thanh 3.5mm đến 3.5mm để kết nối đầu ra âm thanh của laptop với đầu vào âm thanh của bảng. Đầu ra âm thanh của bảng có thể được kết nối với loa.
 
 ![auxcable](cable.png)
 
