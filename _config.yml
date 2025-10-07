@@ -14,13 +14,12 @@ timezone: Asia/Saigon
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Department of Electronics # the main title
+title: DOE Lab Fanpage # the main title
 
-tagline: Welcome to the Department of Electronics. Our department's github page provides various resources and labs to support students in their academic and research activities.
+tagline: This fanpage github.io of DOE lab is created by students. It is collection of guides, tutorials, and resources for students and professionals in the field of electrical and computer engineering.
 # it will display as the sub-title
 
-description: Welcome to the Department of Electronics. Our department provides various resources and labs to support students in their academic and research activities. # used by SEO
-
+description: This fanpage github.io of DOE lab is created by students. It is collection of guides, tutorials, and resources for students and professionals in the field of electrical and computer engineering.
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://doelab.github.io"
@@ -34,8 +33,8 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Department of Electronics
-  email: bmdt@hcmut.edu.vn # change to your email address
+  name: DOE Lab Fanpage
+  email: link@doelab.site # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://www.facebook.com/Electronics.Dpt.HCMUT # change to your twitter homepage

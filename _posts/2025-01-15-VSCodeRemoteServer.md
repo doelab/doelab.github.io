@@ -1,7 +1,7 @@
 ---
 title: VSCode Remote Server Connection Guide
 date: 2025-01-15 11:00:00 +0700
-categories: [Guide, Development]
+categories: [Guide, Software]
 tags: [vscode,remote,ssh,development,server]     # TAG names should always be lowercase
 author: haka
 toc: true
