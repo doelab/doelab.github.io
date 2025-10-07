@@ -9,7 +9,7 @@
 
 - type: email
   icon: "fas fa-envelope"
-  url: "bmdt@hcmut.edu.vn"
+  url: "link@doelab.site"
   noblank: true # open link in current tab
 
 #- type: rss
