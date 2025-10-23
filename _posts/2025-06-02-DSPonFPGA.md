@@ -18,8 +18,6 @@ The big project contains many parts. This is for you to apply the knowledge surr
 
 This is a **group** project, to be done on either DE10 Standard Development Kit or DE2 Standard Development Kit (students are free to choose).
 
-Note: Do **NOT** use IP CATALOG for this lab.
-
 ## Schedule and Scoring
 
 If you have not uploaded anything by the drop-dead date, we will assume you are no longer in the course. Why? Because the syllabus says you must attempt the big project. Not uploading anything and not showing up to explain what you’ve done is not attempting the project — see the syllabus for details.

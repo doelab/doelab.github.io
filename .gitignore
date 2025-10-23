@@ -26,5 +26,5 @@ _sass/dist
 assets/js/dist
 
 #### All pdf
-*.pdf
-compile_pdf.sh
+# *.pdf
+# compile_pdf.sh
