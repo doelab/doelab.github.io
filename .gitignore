@@ -24,3 +24,7 @@ package-lock.json
 # Misc
 _sass/dist
 assets/js/dist
+
+#### All pdf
+*.pdf
+compile_pdf.sh
