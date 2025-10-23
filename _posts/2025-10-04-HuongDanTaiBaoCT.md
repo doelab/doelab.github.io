@@ -34,14 +34,14 @@ Hướng dẫn này sẽ giúp bạn truy cập và sử dụng các cơ sở d�
 **Bước 2:** Chọn mục **"Form đăng ký cấp quyền truy cập CSDL"**
 
 <div align="center">
-<img src="assets/img/huongdantaibao/form_dang_ky_csdl.png" alt="Form đăng ký cấp quyền truy cập CSDL" width="600">
+<img src="/assets/img/huongdantaibao/form_dang_ky_csdl.png" alt="Form đăng ký cấp quyền truy cập CSDL" width="600">
 <br><em>Hình 1: Form đăng ký tài khoản truy cập CSDL</em>
 </div>
 
 **Bước 3:** Chờ email xác nhận và thông tin tài khoản.
 
 <div align="center">
-<img src="assets/img/huongdantaibao/Tai_khoan_Thu_vien.png" alt="Email cung cấp mật khẩu và tài khoản" width="600">
+<img src="/assets/img/huongdantaibao/Tai_khoan_Thu_vien.png" alt="Email cung cấp mật khẩu và tài khoản" width="600">
 <br><em>Hình 2: Email cung cấp thông tin tài khoản</em>
 </div>
 
@@ -73,14 +73,14 @@ Hướng dẫn này sẽ giúp bạn truy cập và sử dụng các cơ sở d�
 **Bước 1:** Truy cập trang IEEE và chọn **"Sign in through an institution"**
 
 <div align="center">
-<img src="assets/img/huongdantaibao/acces_through_institution.png" alt="Đăng nhập thông qua tổ chức" width="600">
+<img src="/assets/img/huongdantaibao/acces_through_institution.png" alt="Đăng nhập thông qua tổ chức" width="600">
 <br><em>Hình 3: Giao diện đăng nhập thông qua tổ chức</em>
 </div>
 
 **Bước 2:** Chọn **"Vietnam National University"** từ danh sách
 
 <div align="center">
-<img src="assets/img/huongdantaibao/chon_vnu.png" alt="Chọn VNU" width="600">
+<img src="/assets/img/huongdantaibao/chon_vnu.png" alt="Chọn VNU" width="600">
 <br><em>Hình 4: Chọn trường đại học từ danh sách</em>
 </div>
 
@@ -89,14 +89,14 @@ Hướng dẫn này sẽ giúp bạn truy cập và sử dụng các cơ sở d�
 > **ℹ️ Lưu ý:** Trang My OpenAthens sẽ tự động mở ra
 
 <div align="center">
-<img src="assets/img/huongdantaibao/dang_nhap_my_athens.png" alt="Đăng nhập my openathens" width="600">
+<img src="/assets/img/huongdantaibao/dang_nhap_my_athens.png" alt="Đăng nhập my openathens" width="600">
 <br><em>Hình 5: Giao diện đăng nhập My OpenAthens</em>
 </div>
 
 **Bước 4:** Xác nhận đăng nhập thành công
 
 <div align="center">
-<img src="assets/img/huongdantaibao/thanh_cong.png" alt="Thành công" width="600">
+<img src="/assets/img/huongdantaibao/thanh_cong.png" alt="Thành công" width="600">
 <br><em>Hình 6: Thông báo đăng nhập thành công</em>
 </div>
 

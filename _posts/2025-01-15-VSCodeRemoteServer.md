@@ -29,13 +29,13 @@ Before starting, ensure you have:
    - **Remote - SSH** (by Microsoft)
    - **Remote - SSH: Editing Configuration Files** (by Microsoft)
 
-![VSCode Extensions](../assets/img/VSCodeRemote/extensions.png)
+![VSCode Extensions](/assets/img/VSCodeRemote/extensions.png)
 
 ## Step 2: Configure SSH Connection
 
 1. Open VSCode Command Palette (Ctrl+Shift+P) or click on the SSH icon in the left sidebar
 
-![VSCode Command Palette](../assets/img/VSCodeRemote/newremote.png)
+![VSCode Command Palette](/assets/img/VSCodeRemote/newremote.png)
 
 2. Type "Remote-SSH: Connect to Host"
 3. Select "Add New SSH Host"
@@ -45,13 +45,13 @@ Before starting, ensure you have:
    ```
    Example: `ssh comp@anthony.doelab.site`
 
-![SSH](<../assets/img/VSCodeRemote/SSH_command.png>)
+![SSH](/assets/img/VSCodeRemote/SSH_command.png)
 
 1. Choose the SSH configuration file location (usually the default)
 2. VSCode will add the connection to your SSH config
 3. Enter your password when prompted and wait for VSCode to download on the server.
 
-![alt text](../assets/img/VSCodeRemote/wait_vscode.png)
+![alt text](/assets/img/VSCodeRemote/wait_vscode.png)
 
 ## Step 3: Connect to Server
 
@@ -89,7 +89,7 @@ module load questasim # Load QuestaSim (example)
 2. Navigate to your project directory
 3. Select the folder to open it in VSCode
 
-![alt text](../assets/img/VSCodeRemote/OpenFolder.png)
+![alt text](/assets/img/VSCodeRemote/OpenFolder.png)
 
 ## Step 7: Development Workflow
 
@@ -103,7 +103,7 @@ module load questasim # Load QuestaSim (example)
 - Execute synthesis, simulation, and other tools
 - Monitor processes and system resources
 
-![alt text](../assets/img/VSCodeRemote/terminal.png)
+![alt text](/assets/img/VSCodeRemote/terminal.png)
 
 ### Debugging
 - Set breakpoints in your code
@@ -118,7 +118,7 @@ VSCode provides excellent support for working with multiple files:
 2. **Side-by-side**: Drag tabs to create side-by-side views
 3. **File Explorer**: Use the file explorer to navigate your project
 
-![alt text](../assets/img/VSCodeRemote/multifolder.png)
+![alt text](/assets/img/VSCodeRemote/multifolder.png)
 
 ## Step 9: Extensions and Settings
 

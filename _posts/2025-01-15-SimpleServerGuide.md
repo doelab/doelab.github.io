@@ -20,7 +20,7 @@ Receive your server access email containing:
 - Wireguard configuration file
 - Server domain name (e.g., `anthony.doelab.site`)
 
-![Sample Email](../assets/img/SimpleServerGuide/sample-email.png)
+![Sample Email](/assets/img/SimpleServerGuide/sample-email.png)
 
 ## Step 2: Install and Configure Wireguard
 
@@ -29,7 +29,7 @@ Receive your server access email containing:
    - **MacOS**: `brew install wireguard-tools`
    - **Linux**: Use your distribution's package manager
 
-![Wireguard Configuration](../assets/img/SimpleServerGuide/wireguard.webp)
+![Wireguard Configuration](/assets/img/SimpleServerGuide/wireguard.webp)
 
 2. Add the provided configuration file to Wireguard
 
@@ -41,11 +41,11 @@ Receive your server access email containing:
 
 1. Open your Remote Desktop client
 
-![Remote Desktop Connection App](../assets/img/SimpleServerGuide/remote-desktop-connection-app.png)
+![Remote Desktop Connection App](/assets/img/SimpleServerGuide/remote-desktop-connection-app.png)
 
 2. **Important**: Set color depth to 16-bit
 
-![Windows Color Depth Drop Down](../assets/img/SimpleServerGuide/windows-color-depth-drop-down.png)
+![Windows Color Depth Drop Down](/assets/img/SimpleServerGuide/windows-color-depth-drop-down.png)
 
 1. Enter the server domain name (e.g., `anthony.doelab.site`)
 2. Use your provided username and password
@@ -59,7 +59,7 @@ srun --x11 --pty bash
 
 You can see the shell prompt is changed to the compute node name.
 
-![Example of srun on server RDP](../assets/img/SimpleServerGuide/srun-on-server-rdp.png)
+![Example of srun on server RDP](/assets/img/SimpleServerGuide/srun-on-server-rdp.png)
 
 This connects you to an available compute node with 1 CPU. Use `-c x` to request x CPUs if needed:
 ```bash
@@ -75,7 +75,7 @@ module load <tool>    # Load a specific tool
 module unload <tool>  # Unload a specific tool
 ```
 
-![Example of module call](../assets/img/SimpleServerGuide/example-module-call.png)
+![Example of module call](/assets/img/SimpleServerGuide/example-module-call.png)
 
 ## Step 4: Setup SSH Remote Development
 
@@ -94,7 +94,7 @@ See detail in [this article ](https://code.visualstudio.com/docs/remote/ssh) fro
 4. Leave port field empty
 5. Transfer files between your computer and server
 
-![Example of FileZilla](../assets/img/SimpleServerGuide/example-filezilla.png)
+![Example of FileZilla](/assets/img/SimpleServerGuide/example-filezilla.png)
 
 ## Step 6: Troubleshoot RDP Issues
 
@@ -104,7 +104,7 @@ If your RDP session hangs (black screen or crash):
 2. Run `htop` to view running processes
 3. Find and kill your own xrdp session
 
-![Example of htop](../assets/img/SimpleServerGuide/htop.png)
+![Example of htop](/assets/img/SimpleServerGuide/htop.png)
 
 For more information regarding how to use htop, you can refer to [this article](https://dev.to/karandaid/mastering-the-linux-htop-command-4509).
 
