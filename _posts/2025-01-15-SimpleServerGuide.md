@@ -35,7 +35,7 @@ Receive your server access email containing:
 
 3. Activate the VPN connection
 
-> **Note**: Wireguard VPN does not work with HCMUT1/HCMUT2 WiFi networks.
+> **Note**: Wireguard VPN work with HCMUT1/HCMUT2 WiFi networks. Remember to change your DNS to 1.1.1.1 or 8.8.8.8
 
 ## Step 3: Connect via Remote Desktop
 
@@ -101,8 +101,21 @@ See detail in [this article ](https://code.visualstudio.com/docs/remote/ssh) fro
 If your RDP session hangs (black screen or crash):
 
 1. Connect via SSH to the server
+
+```
+ssh {username}@{server_name}  # e.g., ssh
+```
+
 2. Run `htop` to view running processes
+
+```
+htop
+```
+
 3. Find and kill your own xrdp session
+
+Press F4 to filter processes, type `xvnc` to find your session, and press F9 to kill it.
+
 
 ![Example of htop](/assets/img/SimpleServerGuide/htop.png)
 
