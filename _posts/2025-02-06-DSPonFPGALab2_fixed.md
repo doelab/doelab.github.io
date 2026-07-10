@@ -1,9 +1,9 @@
 ---
 title:  EE3041 DSP on FPGA Big Project Lab 2 - FIR and IIR Filters
-date: 2025-02-06 09:10:00 +0700
+date: 2026-07-07 09:10:00 +0700
 categories: [Lab Courses, EE3041 DSP on FPGA Big Project]
 tags: [lab, dsponfpga, fpga, courses]      # TAG names should always be lowercase
-author: link
+author: link (created), thenhy (updated) 
 toc: true
 comments: false
 description: Lab 2 for EE3041 DSP on FPGA Course at HCMUT
