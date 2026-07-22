@@ -1,0 +1,17 @@
+---
+---
+
+@import 'main';
+
+/* Dashed separators between table rows for easier reading of wide tables (e.g. grading rubrics) */
+table {
+  tbody {
+    tr {
+      border-bottom: 1px dashed var(--table-border-color, #ccc) !important;
+
+      &:last-child {
+        border-bottom: none !important;
+      }
+    }
+  }
+}
