@@ -100,17 +100,18 @@ To showcase your waveform generator on either the DE10 Standard Development Kit 
 - **Waveform Visualization**: The output waveform must be displayed on an oscilloscope using the FPGA’s built-in CODEC and a 3.5mm-to-BNC cable.
 
 ## For Credit
-- **1 point**: Demonstrates a basic understanding of waveform generation and designs the specifications for the waveform generator. This includes defining the types of waveforms (sine, square, triangle, sawtooth, ECG, noise) and the adjustable parameters (frequency, amplitude, duty cycle).
-- **1 point**: Completes the RTL design for the waveform generator, ensuring it aligns with the given specifications. At a minimum, the design must include sine and square wave generation, and noise injection functionality. These points are awarded only if you successfully simulate and verify the generator's functionality by producing at least one waveform type.
-- **1.5 points**: Additional waveforms are awarded as follows:
-  - Simple waveforms (e.g., triangle, sawtooth): **0.25 points each**.
-  - Complex waveforms (e.g., ECG): **0.75 points each**.
-- **1.5 points**: Successfully simulates the waveform generator design with the provided input parameters. Your analysis should explain how well the generator performs, including the accuracy of the waveforms and the responsiveness of parameter adjustments.
-- **2 points**: Synthesizes the design and checks the synthesis report to ensure the design is synthesizable and meets timing constraints.
-- **3 points**: Performs a live demo on an FPGA, demonstrating real-time waveform generation and parameter adjustments. The output should be displayed on an oscilloscope via the built-in CODEC and a 3.5-to-BNC cable.
-- Bonus points:
-	- Suggest and implement your own innovative improvements to the waveform generator, such as additional functionality or optimizations.
-	-  If your waveform generator results are not optimal, provide a detailed analysis explaining why the results are insufficient and propose a solution to improve it. Even if the performance is not ideal, a well-explained analysis can still earn bonus points.
+
+Total: **10 points** (max), plus bonus.
+
+| Criterion (weight) | Emerging / Below Standard | Progressing / Approaching | Proficient / Meets Standard | Advanced / Exemplary |
+|---|---|---|---|---|
+| **Specification & Design Understanding** (1 pt) | Little or no specification is defined; waveform types and adjustable parameters (frequency, amplitude, duty cycle) are missing or incorrect. | Specification is partially defined; some waveform types or parameters are missing or ambiguous. | Clearly defines all required waveform types (sine, square, triangle, sawtooth, ECG, noise) and adjustable parameters. | Specification is complete, precise, and well-justified, with clear architectural planning for extensibility. |
+| **Baseline RTL Design** (1 pt) | RTL is incomplete or does not simulate; sine/square generation and noise injection are missing or non-functional. | RTL compiles but only partially implements sine/square generation or noise injection; simulation verifies less than one full waveform type. | RTL design aligns with specifications; sine and square wave generation and noise injection are implemented and simulated/verified for at least one waveform type. | RTL is clean, well-structured, and robustly verified, with sine, square, and noise injection all fully functional. |
+| **Additional Waveforms** (1.5 pts: 0.25 ea simple, 0.75 ea complex) | No additional waveforms (triangle, sawtooth, ECG) implemented beyond baseline. | One additional simple waveform implemented and verified. | Multiple simple waveforms and/or the ECG waveform implemented and verified, approaching full credit. | All additional waveforms (triangle, sawtooth, ECG) implemented, verified, and awarded full credit. |
+| **Simulation & Analysis** (1.5 pts) | Simulation is missing, incomplete, or does not use the provided input parameters. | Simulation runs but analysis is shallow, lacking discussion of accuracy or parameter responsiveness. | Simulates the design with provided input parameters and explains waveform accuracy and responsiveness of parameter adjustments. | Simulation is thorough with clear waveform plots, quantitative accuracy analysis, and insightful discussion of edge cases. |
+| **Synthesis & Timing** (2 pts) | Design is not synthesized, or synthesis fails/is not synthesizable. | Design synthesizes but fails to meet timing constraints, or the synthesis report is not analyzed. | Design synthesizes successfully, meets timing constraints, and the synthesis report is checked and reported. | Synthesis report is thoroughly analyzed (resource utilization, fmax, timing slack) with clear discussion of design trade-offs. |
+| **FPGA Live Demo** (3 pts) | No live demo performed, or demo fails to show waveform generation. | Demo partially works — some waveforms or parameter adjustments are not functional on hardware. | Live demo on FPGA successfully shows real-time waveform generation and parameter adjustments, displayed on an oscilloscope via CODEC and 3.5-to-BNC cable. | Demo is polished and fully functional across all waveform types and parameters, with clear real-time oscilloscope evidence. |
+| **Bonus** (uncapped) | No innovative improvements or analysis of suboptimal results attempted. | — | Suggests and implements an innovative improvement, or provides a solid analysis of suboptimal results with a proposed fix. | Implements a notable original enhancement and/or provides a rigorous, well-explained analysis of shortcomings with a validated improvement. |
 
 ## Reporting Requirements
 

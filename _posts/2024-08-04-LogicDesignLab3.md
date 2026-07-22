@@ -144,7 +144,13 @@ Lastly, create a top module name **top_lab3** to connect the LFSR, FIFO controll
 
 ## For Credit
 
-You will be graded mostly on the completeness of your testbenches, do not just give a simple testbench with no assertion check. You will also be graded on your design working on the DE10 Standard board.
+You will be graded mostly on the completeness of your testbenches and assertions, and on your design working on the DE10 Standard board.
+
+| Criterion | Emerging / Below Standard | Progressing / Approaching | Proficient / Meets Standard | Advanced / Exemplary |
+|---|---|---|---|---|
+| **Assertions & Testbench Completeness** | Testbench has no (or only trivial) assertions; fewer than the required 10 test cases; no test plan table provided. | Testbench includes some assertions but misses key FIFO rules (e.g., full/empty checks, pointer increment, data integrity); fewer than 10 test cases or an incomplete test plan table. | Testbench includes assertions covering the core FIFO rules (async reset, data write/read integrity, no write when full, no read when empty, pointer increment) with at least 10 documented test cases and a complete test plan table (Test number / Case name / Case description / Pass Condition / Fail Condition). | Testbench is comprehensive, covering the core rules plus additional edge cases (e.g., simultaneous read/write, boundary pointer wraparound) with a clear, well-documented test plan and all assertions passing. |
+| **FIFO/Top-Level Design Correctness** | FIFO controller, memory, or top-level integration (LFSR, clock dividers, HEX/LED/KEY mapping) is missing or non-functional in simulation. | Design simulates but has functional bugs (e.g., incorrect full/empty detection, wrong data on read) or incomplete top-level integration. | FIFO controller and memories function correctly in simulation; top_lab3 correctly integrates LFSR, clock dividers, and I/O mapping (HEX, LEDR, KEY) as specified. | Design is robust and cleanly implemented, correctly handling all specified behavior with well-structured, readable RTL. |
+| **DE10 Hardware Demo** | Design does not work on the DE10 board, or demo is not performed. | Design partially works on hardware — some functionality (e.g., HEX display, LED status, or read/write control) is incorrect or unreliable. | Design works correctly on the DE10 Standard board, demonstrating FIFO write/read, full/empty LED indicators, and correct HEX display per SW0 selection. | Hardware demo is fully functional and reliable across repeated trials, clearly matching simulated behavior. |
 
 ## Some Other Things you Should Learn
 

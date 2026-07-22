@@ -109,18 +109,17 @@ To achieve a high grade, you must implement your design on the FPGA using either
 
 ## For Credit
 
-- **1 point**: Demonstrates a basic understanding of FIR and designs the specifications for the FIR filters, including the theoretical calculation for the folding factor.
-- **1 point**: Completes the baseline (unfolded) RTL design for the FIR filters, ensuring it aligns with the given specifications. These points are awarded only if you successfully simulate and verify the baseline filter's functionality with at least one sample.
-- **2 points**: Implements the optimized folded architecture using the hardware folding technique to achieve area and resource efficiency based on the required folding factor.
-- **1 point**: Successfully simulates both the baseline and folded filter designs using the provided input samples and testbenches, ensuring functional correctness after folding.
-- **2 points**: Synthesizes both the baseline and folded designs, ensuring they are fully synthesizable. You must extract and present a comparative analysis from the synthesis reports, evaluating design characteristics (resource utilization, maximum frequency, latency, and throughput) before and after implementing the folding technique.
-- **3 points**: Performs a live demo of the optimized folded filter on an FPGA, demonstrating real-time performance and signal processing.
-- Bonus points:
-	- Fully parameterizable FIR and/or IIR filter.
-	- Demonstrates the filters's performance using real-world signals (audio signal).
-	- Adaptive FIR and/or IIR filters with dynamically updated coefficients based on signal input.
-	- Propose your own idea for the improvements.
-	- If your filter results are not optimal, you should analyze and explain why the result is insufficient, and propose a solution to improve it. Even if the filter performance is not ideal, a well-explained analysis can still earn bonus points.
+Total: **10 points** (max), plus bonus.
+
+| Criterion (weight) | Emerging / Below Standard | Progressing / Approaching | Proficient / Meets Standard | Advanced / Exemplary |
+|---|---|---|---|---|
+| **Specification & Folding Factor** (1 pt) | No specification or folding factor calculation attempted, or FIR fundamentals are misunderstood. | Specification is partial; folding factor calculation is attempted but incorrect or unjustified. | Demonstrates a basic understanding of FIR filtering and derives the specification, including a correct theoretical calculation of the folding factor. | Specification and folding factor derivation are precise and clearly justified, with insight into the resulting hardware trade-offs. |
+| **Baseline (Unfolded) RTL Design** (1 pt) | Baseline RTL is incomplete, does not compile, or is not simulated. | Baseline RTL is complete but simulation/verification is missing or fails for all samples. | Completes the baseline unfolded RTL design aligned with specifications, successfully simulated and verified with at least one sample. | Baseline design is clean and robustly verified across multiple samples, with clear documentation of the architecture. |
+| **Folded Architecture** (2 pts) | Folding technique is not implemented, or the folded design does not function. | Folded architecture is partially implemented; area/resource efficiency does not match the required folding factor. | Implements the optimized folded architecture correctly, achieving area and resource efficiency consistent with the required folding factor. | Folded architecture is well-optimized and clearly documented, with efficient control logic beyond the minimum requirement. |
+| **Simulation Correctness** (1 pt) | Simulation of baseline and/or folded design is missing or shows incorrect results. | Only one of baseline/folded is successfully simulated, or correctness after folding is not verified. | Successfully simulates both baseline and folded designs with provided samples/testbenches, confirming functional correctness after folding. | Simulation is comprehensive, covering edge cases, with clear side-by-side evidence that folding preserves correctness. |
+| **Synthesis & Comparative Analysis** (2 pts) | Designs are not synthesized, fail to synthesize, or no comparative analysis is provided. | Only one design (baseline or folded) is synthesized and analyzed; comparison is incomplete or superficial. | Synthesizes both baseline and folded designs; presents a comparative analysis of resource utilization, max frequency, latency, and throughput. | Comparative analysis is thorough and insightful, clearly explaining the resource/performance trade-offs introduced by folding. |
+| **FPGA Live Demo** (3 pts) | No live demo, or the folded filter does not function on hardware. | Demo partially works — real-time filtering is unstable or incomplete. | Performs a live demo of the optimized folded filter on an FPGA, demonstrating real-time performance and signal processing. | Demo is polished, using both periodic-wave and audio-wave demonstrations, clearly showing noise removal in real time. |
+| **Bonus** (uncapped) | No bonus items attempted. | — | Attempts one bonus item (e.g., parameterizable filter, audio demo, adaptive filter, own idea, or analysis of suboptimal results) with reasonable execution. | Delivers a strong bonus contribution (e.g., fully parameterizable and/or adaptive filter, compelling real-world audio demo) or a rigorous, well-explained analysis of shortcomings with a validated fix. |
 
 ## Reporting Requirements
 
