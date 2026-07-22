@@ -71,18 +71,17 @@ If you're aiming for a high grade, you'll need to implement your design on the F
 
 ## For Credit
 
-- **0.5 point**: Demonstrates understanding of equalizers, including the basic filter requirements for different frequency bands. 
-- **0.5 point**: Provides a well-reasoned explanation for choosing FIR, IIR, or a combination of both and defines the complete specifications for the equalizer.
-- **2 points**: Implements a working audio equalizer with three frequency bands (bass, mid, and treble). These points are awarded only if you successfully simulate and verify the design.
-- **2 points**: Completes and verifies the filter design in simulation, ensuring it meets the required specifications for each frequency band.
-- **2 points**: Synthesizes the design, you should check the report to make sure the design is synthesizable.
-- **3 points**: Demonstrates successful real-time control of gain for each frequency band using FPGA switches or keys using audio sample from an external device.
-- **Bonus points**:
-  - Adds additional frequency bands beyond the three required.
-  - Implements a program that allows real-time adjustment of frequency gain via communication with the FPGA.
-  - Provides a fully parameterized design, allowing frequency band limits to be adjusted in code.
-  - You can propose your own idea
-  - If your results are not optimal, you should analyze and explain why the result is insufficient, and propose a solution to improve it. Even if the performance is not ideal, a well-explained analysis can still earn bonus points.
+Total: **10 points** (max), plus bonus.
+
+| Criterion (weight) | Emerging / Below Standard | Progressing / Approaching | Proficient / Meets Standard | Advanced / Exemplary |
+|---|---|---|---|---|
+| **Equalizer Understanding** (0.5 pt) | Little or no understanding of equalizers or per-band filter requirements is demonstrated. | Partial understanding shown; explanation of band filtering requirements is vague or incomplete. | Demonstrates understanding of equalizers, including the basic filter requirements for different frequency bands. | Understanding is thorough, with clear discussion of trade-offs between band filter types and design choices. |
+| **Filter Choice & Specification** (0.5 pt) | No justification for FIR/IIR choice; specification is missing or incomplete. | FIR/IIR choice is stated but weakly justified; specification is only partially defined. | Provides a well-reasoned explanation for choosing FIR, IIR, or a combination of both, and defines complete specifications for the equalizer. | Justification is rigorous and specification is precise, anticipating implementation trade-offs (e.g., latency, resource use). |
+| **Working Equalizer Implementation** (2 pts) | Equalizer is not implemented, or bass/mid/treble bands are missing or non-functional. | Equalizer is implemented but not fully functional across all three bands; simulation/verification is missing. | Implements a working audio equalizer with three frequency bands (bass, mid, treble), successfully simulated and verified. | Implementation is clean and robust, with all three bands verified and clear, well-organized RTL. |
+| **Filter Design Verification** (2 pts) | Filter design is not simulated, or simulation does not verify the required specifications. | Simulation is incomplete or shows the design does not fully meet specifications for one or more bands. | Completes and verifies the filter design in simulation, ensuring it meets the required specifications for each frequency band. | Verification is thorough and well-documented, with clear evidence (plots/data) that each band meets spec, including edge cases. |
+| **Synthesis** (2 pts) | Design is not synthesized, or fails to synthesize. | Design synthesizes but the report is not checked, or synthesizability issues are unresolved. | Synthesizes the design and checks the report to confirm the design is synthesizable. | Synthesis report is carefully analyzed (resource utilization, timing, fmax) with clear discussion of results. |
+| **Real-Time Gain Control Demo** (3 pts) | No real-time demo performed, or gain control does not function. | Demo partially works — gain control for some bands is unreliable or audio quality is poor. | Demonstrates successful real-time control of gain for each frequency band using FPGA switches or keys, with audio sample from an external device. | Demo is polished and reliable, clearly showing distinct, high-quality audio effect for each band's gain adjustment. |
+| **Bonus** (uncapped) | No bonus items attempted. | — | Attempts one bonus item (e.g., extra frequency bands, external gain-control program, parameterized design, own idea, or analysis of suboptimal results) with reasonable execution. | Delivers a strong bonus contribution (e.g., many extra bands, real-time PC-controlled gain, fully parameterized design) or a rigorous, well-explained analysis of shortcomings with a validated fix. |
 
 ## Reporting Requirements
 
